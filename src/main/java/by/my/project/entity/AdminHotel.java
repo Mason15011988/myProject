@@ -11,19 +11,17 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-
 @Data
 @Entity
-@Table(name = "users")
-@NamedNativeQueries({})
-public class User implements Serializable {
+@Table(name = "admins_hotel")
+public class AdminHotel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
-    private Long id;
+    @Column(name = "admin_id")
+    private Integer id;
 
     @Email
-    @Column(name = "email", unique = true)
+    @Column(name = "email")
     @NotEmpty(message = "Email отсутствует")
     private String email;
 
@@ -39,11 +37,11 @@ public class User implements Serializable {
     private Role role;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_date")
-    private List<DateOfBooking> dateOfBookingList;
+    private List<Hotel> hotelList;
 
     @PrePersist
     void prePersist() {
         date = new Date();
     }
+
 }

@@ -5,13 +5,14 @@
     <style>
         <%@include file="../static/css/bootstrap.min.css"%>
     </style>
-    <title>Registration</title>
+    <title>Login</title>
+
 </head>
 <body>
 <div class="container">
-    <p>Выбор регистрации</p> <br>
-    <a href="${pageContext.request.contextPath}/registration/admin">Администратор Отеля</a>
-    <a href="${pageContext.request.contextPath}/registration/user">Пользователь</a>
+        <p>Вход</p>
+    <a href="${pageContext.request.contextPath}/login/admin">Администратор Отеля</a>
+    <a href="${pageContext.request.contextPath}/login/user">Пользователь</a>
 </div>
 </body>
 </html>
