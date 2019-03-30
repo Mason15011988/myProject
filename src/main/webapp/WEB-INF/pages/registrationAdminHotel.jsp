@@ -5,12 +5,13 @@
     <style>
         <%@include file="../static/css/bootstrap.min.css"%>
     </style>
-    <title>Registration  AdminHotel </title>
+    <title>Registration  Admin Hotel </title>
 </head>
 <body>
 <div class="container">
-    <spring:form cssClass="form-control-sm" modelAttribute="newAdmin" method="post" action="/registration/admin">
-        <p>Регистрация пользователя</p>
+    <spring:form cssClass="form-control-sm" modelAttribute="newAdminHotel" method="post"
+                 action="${pageContext.request.contextPath}/registration/adminHotel">
+        <p>Регистрация Администратора отеля</p>
         <br>Email<br>
         <spring:input path="email"/>
         <div style="color: red"><spring:errors path="email"/>

@@ -24,7 +24,7 @@ public class IndexInterceptor implements HandlerInterceptor {
             modelAndView.setViewName(REDIRECT + USER_SESSION);
         }
         if (attribute.equals(Role.ADMIN_HOTEL)){
-            modelAndView.setViewName(REDIRECT + ADMIN_SESSION);
+            modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION);
         }
     }
 

@@ -9,7 +9,8 @@
 </head>
 <body>
 <div class="container">
-    <spring:form cssClass="form-control-sm" modelAttribute="newUser" method="post" action="/registration/user">
+    <spring:form cssClass="form-control-sm" modelAttribute="newUser" method="post"
+                 action="${pageContext.request.contextPath}/registration/user">
         <p>Регистрация пользователя</p>
         <br>Email<br>
         <spring:input path="email"/>

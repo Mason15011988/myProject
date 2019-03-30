@@ -4,16 +4,11 @@ import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Data
-@Entity
-@Table(name = "addresses")
+@Embeddable
 public class AddressHotel {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "address_id")
-    private Integer id;
 
     @Column(name = "country")
     @NotEmpty(message = "Страна отсутствует")
@@ -28,9 +23,6 @@ public class AddressHotel {
     private String street;
 
     @Column(name = "house")
-    @NotEmpty(message = "Дом отсутствует")
+    @NotNull(message = "Дом отсутствует")
     private Integer house;
-
-    @OneToOne(mappedBy = "addressHotel")
-    private Hotel hotel;
 }

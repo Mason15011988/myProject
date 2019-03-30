@@ -1,9 +1,9 @@
 package by.my.project.service;
 
+import by.my.project.entity.DateOfBooking;
 import by.my.project.entity.User;
 import by.my.project.repository.JpaUserRepository;
 import lombok.RequiredArgsConstructor;
-import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,25 +18,35 @@ public class JpaUserService implements UserService {
 
     @Override
     @Transactional(readOnly = true)
-    public boolean findUserByEmail(String email) {
+    public User findUserByEmail(String email) {
         try {
-            userRepository.findUserByEmail(email);
-            return true;
-        }catch (NoResultException e){
-            return  false;
+            return userRepository.findUserByEmail(email);
+
+        } catch (NoResultException e) {
+            return null;
         }
     }
 
     @Override
+    public void addDate(DateOfBooking dateOfBooking) {
+        userRepository.addDate(dateOfBooking);
+    }
+
+    @Override
+    public void updateUser(User user) {
+        userRepository.updateUser(user);
+    }
+
+    @Override
     public void addUser(User user) {
-            userRepository.addUser(user);
+        userRepository.addUser(user);
     }
 
     @Override
     public User findUser(User user) {
         try {
             return userRepository.findUser(user);
-        }catch (NoResultException e){
+        } catch (NoResultException e) {
             return null;
         }
     }

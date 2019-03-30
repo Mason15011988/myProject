@@ -17,15 +17,17 @@ public class DateOfBooking {
     private Integer id;
 
     @Column(name = "start_date")
-    @NotEmpty(message = "заполните")
+    @Temporal(TemporalType.DATE)
+   // @NotEmpty(message = "заполните")
     private Date startDate;
 
     @Column(name = "end_date")
-    @NotEmpty(message = "заполните")
+    @Temporal(TemporalType.DATE)
+   // @NotEmpty(message = "заполните")
     private Date endDate;
 
     @ManyToOne
-    @JoinColumn(name = "room_id")
+    //@JoinColumn(name = "room_id")
     private Room room;
 
 //    @ManyToOne

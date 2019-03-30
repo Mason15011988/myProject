@@ -36,7 +36,8 @@ public class AdminHotel implements Serializable {
     @Column(name = "role")
     private Role role;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "adminHotel")
+//    @JoinColumn(name = "admin_hotel_id")
     private List<Hotel> hotelList;
 
     @PrePersist
@@ -44,4 +45,14 @@ public class AdminHotel implements Serializable {
         date = new Date();
     }
 
+    @Override
+    public String toString() {
+        return "AdminHotel{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", date=" + date +
+                ", role=" + role +
+                '}';
+    }
 }

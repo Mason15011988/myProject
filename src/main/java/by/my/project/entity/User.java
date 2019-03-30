@@ -15,7 +15,11 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "users")
-@NamedNativeQueries({})
+@NamedQueries(
+        {@NamedQuery(name = "User.findUser",
+        query = "select u from User u where u.email = :email and u.password = :password"),
+        @NamedQuery(name = "User.findUserByEmail",query = "select u from  User u where u.email =:email")
+        })
 public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

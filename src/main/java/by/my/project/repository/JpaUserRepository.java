@@ -1,11 +1,11 @@
 package by.my.project.repository;
 
+import by.my.project.entity.DateOfBooking;
 import by.my.project.entity.User;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import java.sql.SQLIntegrityConstraintViolationException;
 
 @Repository
 public class JpaUserRepository implements UserRepository {
@@ -20,24 +20,31 @@ public class JpaUserRepository implements UserRepository {
 
     @Override
     public User findUser(User user) {
-        String sql = "from User where email = ?1 and password = ?2";
-        return (User) entityManager.createQuery(sql).
-                setParameter(1,user.getEmail()).
-                setParameter(2,user.getPassword()).
+        return entityManager.createNamedQuery("User.findUser", user.getClass()).
+                setParameter("email", user.getEmail()).
+                setParameter("password", user.getPassword()).
                 getSingleResult();
     }
 
     @Override
+    public void updateUser(User user) {
+        entityManager.merge(user);
+    }
+
+    @Override
+    public void addDate(DateOfBooking dateOfBooking) {
+        entityManager.persist(dateOfBooking);
+    }
+
+    @Override
     public User findUserByEmail(String email) {
-        String sql = "from User where email = ?1";
-        return entityManager.createQuery(sql, User.class).
-                setParameter(1,email).
+        return entityManager.createNamedQuery("User.findUserByEmail", User.class).
+                setParameter("email", email).
                 getSingleResult();
     }
 
     @Override
     public void addUser(User user) {
         entityManager.persist(user);
-
     }
 }

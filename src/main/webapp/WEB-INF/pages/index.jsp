@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
     <style>
@@ -17,6 +17,45 @@
             <th style="text-align: center"><a  href="${pageContext.request.contextPath}/login">Вход</a></th>
         </tr>
     </table>
+</div>
+${search}
+<%--${v2}--%>
+
+<div class="container">
+    <form method="post" action="${pageContext.request.contextPath}/">
+        <table>
+            <tr>
+                <th>Страна<br>
+                    <input type="text"  name="country" />
+                </th>
+                <th>
+                    Количкство мест<br>
+                    <input type="text" name="numberSeat"/>
+                </th>
+                <th>
+                    Заезд<br>
+                    <input type="date" name="startDate"/>
+                </th>
+                <th>
+                    Отьезд<br>
+                    <input type="date" name="endDate"/><br>
+
+                </th>
+                <th>
+                    <br>
+                    <button type="submit">Поиск</button>
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th><font size="2" color="red">${errorNowDate}</font></th>
+                <th><font size="2" color="red">${errorDate}</font> </th>
+                <th></th>
+
+            </tr>
+        </table>
+    </form>
 </div>
 </body>
 </html>

@@ -4,30 +4,50 @@ import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.List;
 
 @Data
 @Entity
 @Table(name = "rooms")
-public class Room {
+public class Room implements Serializable,Cloneable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     @Column(name = "room_id")
     private Integer id;
 
     @Column(name = "number_seat")
-    @NotEmpty(message = "заполните")
+    @NotNull(message = "заполните")
     private Integer numberSeat;
 
     @Column(name = "price")
-    @NotEmpty(message = "заполните")
+    @NotNull(message = "заполните")
     private Integer price;
 
+    @Transient
+    private Integer count;
+
     @ManyToOne
-    @JoinColumn(name = "hotel_id")
     private Hotel hotel;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "room")
     private List<DateOfBooking> dateOfBookingList;
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "id=" + id +
+                ", numberSeat=" + numberSeat +
+                ", price=" + price +
+                ", count=" + count +
+                ", hotel=" + hotel +
+                '}';
+    }
 }
