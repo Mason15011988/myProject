@@ -14,6 +14,10 @@ public interface AdminHotelRepository {
 
     void addHotel(Hotel hotel);
 
+    Hotel findHotel(Hotel hotel);
+
+    void deleteHotel(Hotel hotel);
+
     void addRoom(Room room);
 
     void addHotelAddress(AddressHotel addressHotel);

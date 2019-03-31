@@ -12,6 +12,11 @@ public interface AdminHotelService {
 
     void updateHotel(Hotel hotel);
 
+    void deleteHotel(Hotel hotel);
+
+    Hotel findHotel(Hotel hotel);
+
+
     AdminHotel findAdminHotelByEmail(String email);
 
     AdminHotel findAdminHotel(AdminHotel adminHotel);

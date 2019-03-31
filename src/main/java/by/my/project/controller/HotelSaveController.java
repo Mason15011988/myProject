@@ -87,12 +87,13 @@ public class HotelSaveController {
         }
         Hotel hotel = (Hotel) request.getSession().getAttribute(NEW_HOTEL);
         room.setHotel(hotel);
-        int count = room.getCount();
+       // int count = room.getCount();
         List<Room> rooms = new ArrayList<>();
-        for (int i = 0; i < count; i++) {
-            Room room1 = (Room) room.clone();
-            rooms.add(room1);
-        }
+//        for (int i = 0; i < count; i++) {
+//            Room room1 = (Room) room.clone();
+//            rooms.add(room1);
+//        }
+        rooms.add(room);
         hotel.getRoomList().addAll(rooms);
         modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE + "/" + HOTEL + "/" + CHOICE_ADD_ROOM);
         return modelAndView;

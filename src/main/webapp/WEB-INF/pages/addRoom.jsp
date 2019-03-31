@@ -20,9 +20,9 @@
         <br>Цена за день<br>
         <spring:input path="price"/>
         <div><spring:errors cssStyle="color: red" path="price"/></div>
-        <br>
-        <br>Количество номеров<br>
-        <spring:input path="count"/>
+        <br>Номер комнаты <br>
+        <spring:input path="numberRoom"/>
+        <div><spring:errors cssStyle="color: red" path="price"/></div>
         <p><spring:button>Создать</spring:button></p>
     </spring:form>
 </div>

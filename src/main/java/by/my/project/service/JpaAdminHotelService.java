@@ -29,6 +29,20 @@ public class JpaAdminHotelService implements AdminHotelService {
     }
 
     @Override
+    public Hotel findHotel(Hotel hotel) {
+        try {
+            return adminHotelRepository.findHotel(hotel);
+        } catch (NoResultException e) {
+            return null;
+        }
+    }
+
+    @Override
+    public void deleteHotel(Hotel hotel) {
+        adminHotelRepository.deleteHotel(hotel);
+    }
+
+    @Override
     public void updateHotel(Hotel hotel) {
         adminHotelRepository.updateHotel(hotel);
     }

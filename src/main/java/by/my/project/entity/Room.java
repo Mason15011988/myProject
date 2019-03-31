@@ -22,12 +22,16 @@ public class Room implements Serializable,Cloneable {
     @NotNull(message = "заполните")
     private Integer numberSeat;
 
+    @Column(name = "number_room")
+    @NotNull(message = "заполните")
+    private Integer numberRoom;
+
     @Column(name = "price")
     @NotNull(message = "заполните")
     private Integer price;
 
-    @Transient
-    private Integer count;
+//    @Transient
+//    private Integer count;
 
     @ManyToOne
     private Hotel hotel;
@@ -35,18 +39,18 @@ public class Room implements Serializable,Cloneable {
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "room")
     private List<DateOfBooking> dateOfBookingList;
 
-    @Override
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
+//    @Override
+//    public Object clone() throws CloneNotSupportedException {
+//        return super.clone();
+//    }
 
     @Override
     public String toString() {
         return "Room{" +
                 "id=" + id +
                 ", numberSeat=" + numberSeat +
+                ", numberRoom=" + numberRoom +
                 ", price=" + price +
-                ", count=" + count +
                 ", hotel=" + hotel +
                 '}';
     }

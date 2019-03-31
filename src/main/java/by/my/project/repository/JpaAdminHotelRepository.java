@@ -25,6 +25,22 @@ public class JpaAdminHotelRepository implements AdminHotelRepository {
     }
 
     @Override
+    public Hotel findHotel(Hotel hotel) {
+        String sql = "from Hotel where id = ?1";
+
+        return (Hotel) entityManager.createQuery(sql).
+                setParameter(1, hotel.getId()).
+                getSingleResult();
+    }
+
+    @Override
+    public void deleteHotel(Hotel hotel) {
+        Hotel hotelForDel = findHotel(hotel);
+
+        entityManager.remove(entityManager.contains(hotelForDel) ? hotelForDel : entityManager.merge(hotelForDel));
+    }
+
+    @Override
     public void updateHotel(Hotel hotel) {
         entityManager.merge(hotel);
     }

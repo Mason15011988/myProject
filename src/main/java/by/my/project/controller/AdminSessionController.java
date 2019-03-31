@@ -1,15 +1,18 @@
 package by.my.project.controller;
 
+import by.my.project.entity.AddressHotel;
 import by.my.project.entity.AdminHotel;
 import by.my.project.entity.Hotel;
 import by.my.project.service.JpaAdminHotelService;
 import by.my.project.util.PasswordUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import java.util.List;
 
 import static by.my.project.constant.Constants.*;
@@ -65,7 +68,7 @@ public class AdminSessionController {
     }
 
     @GetMapping(path = ADMIN_HOTEL_PROFILE + "/" + EDIT_ADMIN_HOTEL_PASSWORD)
-    public ModelAndView adminProfileEditPasswordSetForm(ModelAndView modelAndView){
+    public ModelAndView adminProfileEditPasswordSetForm(ModelAndView modelAndView) {
         modelAndView.setViewName(EDIT_ADMIN_HOTEL_PASSWORD);
         return modelAndView;
     }
@@ -74,14 +77,14 @@ public class AdminSessionController {
     public ModelAndView adminProfileEditPasswordGetForm(@RequestParam(PASSWORD) String password,
                                                         @RequestParam(NEW_PASSWORD) String newPassword,
                                                         @RequestParam(REPEAT_NEW_PASSWORD) String repeatNewPassword,
-                                                        HttpServletRequest request,ModelAndView modelAndView){
+                                                        HttpServletRequest request, ModelAndView modelAndView) {
         AdminHotel adminHotel = (AdminHotel) request.getSession().getAttribute(ADMIN_HOTEL_SESSION);
-        if (!adminHotel.getPassword().equals(PasswordUtil.convertPassToMD5(password))){
+        if (!adminHotel.getPassword().equals(PasswordUtil.convertPassToMD5(password))) {
             modelAndView.addObject(MESSAGE_ERROR, MESSAGE_ERROR_FOR_PASSWORD);
             modelAndView.setViewName(EDIT_ADMIN_HOTEL_PASSWORD);
             return modelAndView;
         }
-        if (!newPassword.equals(repeatNewPassword)){
+        if (!newPassword.equals(repeatNewPassword)) {
             modelAndView.addObject(MESSAGE_ERROR_REPEAT, MESSAGE_ERROR_FOR_REPEAT_PASSWORD);
             modelAndView.setViewName(EDIT_ADMIN_HOTEL_PASSWORD);
             return modelAndView;
@@ -99,7 +102,8 @@ public class AdminSessionController {
         modelAndView.setViewName(HOTELS);
         List<Hotel> hotels = adminHotel1.getHotelList();
         if (hotels.size() == 0) {
-            modelAndView.addObject("errorHotel", "нет отелей");
+            modelAndView.addObject(MESSAGE_ERROR, NO_HOTEL);
+            modelAndView.addObject(HOTELS, hotels);
             return modelAndView;
         }
 
@@ -109,12 +113,67 @@ public class AdminSessionController {
     }
 
     @GetMapping(path = HOTELS + "/show/{id}")
-    public ModelAndView showHotel(@PathVariable("id") Integer id, HttpServletRequest request,
+    public ModelAndView showHotel(@PathVariable(ID) Integer id, HttpServletRequest request,
                                   ModelAndView modelAndView) {
         List<Hotel> hotels = (List<Hotel>) request.getSession().getAttribute(HOTELS);
         Hotel hotel = hotels.get(id - 1);
-        modelAndView.addObject("hotelshow", hotel);
-        modelAndView.setViewName("hotel");
+        request.getSession().setAttribute(HOTEL, hotel);
+        modelAndView.addObject("hotelShow", hotel);
+        modelAndView.setViewName(HOTEL);
+        return modelAndView;
+    }
+
+    @GetMapping(path = DELETE_HOTEL)
+    public ModelAndView deleteHotel(ModelAndView modelAndView, HttpServletRequest request) {
+        Hotel hotelForDel = (Hotel) request.getSession().getAttribute(HOTEL);
+        adminHotelService.deleteHotel(hotelForDel);
+        modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE);
+        return modelAndView;
+    }
+
+    @GetMapping(path = EDIT_HOTEL)
+    public ModelAndView editHotelSetForm(ModelAndView modelAndView) {
+        modelAndView.setViewName(EDIT_HOTEL);
+        modelAndView.addObject(NEW_HOTEL, new Hotel());
+        return modelAndView;
+    }
+
+    @PostMapping(path = EDIT_HOTEL)
+    public ModelAndView editHotelGetForm(@Valid @ModelAttribute(NEW_HOTEL) Hotel hotel, BindingResult bindingResult,
+                                            ModelAndView modelAndView, HttpServletRequest request){
+        if (bindingResult.hasErrors()) {
+            modelAndView.setViewName(EDIT_HOTEL);
+            return modelAndView;
+        }
+        Hotel hotelForUpdate = (Hotel) request.getSession().getAttribute(HOTEL);
+        hotelForUpdate.setName(hotel.getName());
+        hotelForUpdate.setStars(hotel.getStars());
+        hotelForUpdate.setDescription(hotel.getDescription());
+        adminHotelService.updateHotel(hotelForUpdate);
+        modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE);
+        return modelAndView;
+    }
+
+
+    @GetMapping(path = EDIT_HOTEL_ADDRESS)
+    public ModelAndView editHotelAddressSetForm(ModelAndView modelAndView) {
+        modelAndView.setViewName(EDIT_HOTEL_ADDRESS);
+        modelAndView.addObject(NEW_ADDRESS, new AddressHotel());
+        return modelAndView;
+    }
+
+    @PostMapping(path = EDIT_HOTEL_ADDRESS)
+    public ModelAndView editHotelAddressGetForm(@Valid @ModelAttribute(NEW_ADDRESS) AddressHotel addressHotel,
+                                                BindingResult bindingResult,ModelAndView modelAndView,
+                                                HttpServletRequest request){
+        if (bindingResult.hasErrors()) {
+            modelAndView.setViewName(EDIT_HOTEL_ADDRESS);
+            return modelAndView;
+        }
+        Hotel hotelForUpdate = (Hotel) request.getSession().getAttribute(HOTEL);
+        hotelForUpdate.setAddressHotel(addressHotel);
+        adminHotelService.updateHotel(hotelForUpdate);
+        modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE);
         return modelAndView;
     }
 }

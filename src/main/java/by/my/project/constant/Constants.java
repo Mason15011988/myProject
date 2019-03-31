@@ -2,8 +2,10 @@ package by.my.project.constant;
 
 public final class Constants {
     public static final String USER = "user";
+    public static final String ID = "id";
     public static final String ADMIN_HOTEL = "adminHotel";
     public static final String HOTEL = "hotel";
+    public static final String DELETE_HOTEL = "deleteHotel";
     public static final String HOTELS = "hotels";
     public static final String HOTEL_ADDRESS = "hotelAddress";
     public static final String ROLE = "role";
@@ -21,6 +23,8 @@ public final class Constants {
     public static final String EXIT = "exit";
     public static final String EDIT_ADMIN_HOTEL = "editAdminHotel";
     public static final String EDIT_USER = "editUser";
+    public static final String EDIT_HOTEL = "editHotel";
+    public static final String EDIT_HOTEL_ADDRESS = "editHotelAddress";
     public static final String EDIT_ADMIN_HOTEL_EMAIL = "editAdminHotelEmail";
     public static final String EDIT_USER_EMAIL = "editUserEmail";
     public static final String EDIT_ADMIN_HOTEL_PASSWORD = "editAdminHotelPassword";
@@ -36,6 +40,7 @@ public final class Constants {
     public static final String ADD_HOTEL = "addHotel";
     public static final String ADD_ROOM = "addRoom";
     public static final String ADD_HOTEL_ADDRESS = "addHotelAddress";
+    public static final String NO_HOTEL = "нет отелей";
     public static final String REDIRECT = "redirect:/";
     public static final String MESSAGE_ERROR = "messageError";
     public static final String MESSAGE_ERROR_REPEAT = "messageErrorRepeat";

@@ -10,7 +10,8 @@
 </head>
 <body >
 <div class="header-panel" style="background-color:cornsilk;height: 50px">
-    ${errorHotel}
+    ${messageError}
+
     <c:if test="${hotels.size() > 0}">
         <p>Отели:</p>
         <ul>
