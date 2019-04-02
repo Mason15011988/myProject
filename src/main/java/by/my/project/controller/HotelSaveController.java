@@ -1,10 +1,12 @@
 package by.my.project.controller;
 
+import by.my.project.constant.Role;
 import by.my.project.entity.AddressHotel;
 import by.my.project.entity.AdminHotel;
 import by.my.project.entity.Hotel;
 import by.my.project.entity.Room;
 import by.my.project.service.JpaAdminHotelService;
+import by.my.project.util.ModelAndViewUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -29,9 +31,8 @@ public class HotelSaveController {
 
     @GetMapping(path = ADD_HOTEL_ADDRESS)
     public ModelAndView setFormAddress(ModelAndView modelAndView) {
-        modelAndView.setViewName(ADD_HOTEL_ADDRESS);
         modelAndView.addObject(NEW_ADDRESS, new AddressHotel());
-        return modelAndView;
+        return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ADDRESS, ADD_HOTEL);
     }
 
     @PostMapping(path = ADD_HOTEL_ADDRESS)
@@ -39,8 +40,7 @@ public class HotelSaveController {
                                        BindingResult bindingResult,
                                        ModelAndView modelAndView, HttpServletRequest request) {
         if (bindingResult.hasErrors()) {
-            modelAndView.setViewName(ADD_HOTEL_ADDRESS);
-            return modelAndView;
+            return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ADDRESS, ADD_HOTEL);
         }
         request.getSession().setAttribute(HOTEL_ADDRESS, addressHotel);
         modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE + "/" + HOTEL + "/" + ADD_HOTEL);
@@ -49,67 +49,55 @@ public class HotelSaveController {
 
     @GetMapping(path = ADD_HOTEL)
     public ModelAndView setFormHotel(ModelAndView modelAndView) {
-        modelAndView.setViewName(ADD_HOTEL);
         modelAndView.addObject(NEW_HOTEL, new Hotel());
-        return modelAndView;
+        return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL, ADD_HOTEL);
     }
 
     @PostMapping(path = ADD_HOTEL)
     public ModelAndView getFormHotel(@Valid @ModelAttribute(NEW_HOTEL) Hotel hotel, BindingResult bindingResult,
                                      ModelAndView modelAndView, HttpServletRequest request) {
         if (bindingResult.hasErrors()) {
-            modelAndView.setViewName(ADD_HOTEL);
-            return modelAndView;
+            return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL, ADD_HOTEL);
+
         }
         AdminHotel adminHotel = (AdminHotel) request.getSession().getAttribute(ADMIN_HOTEL_SESSION);
         AddressHotel addressHotel = (AddressHotel) request.getSession().getAttribute(HOTEL_ADDRESS);
         hotel.setAdminHotel(adminHotel);
         hotel.setAddressHotel(addressHotel);
         adminHotelService.addHotel(hotel);
-        request.getSession().setAttribute(NEW_HOTEL, hotel);
-        modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE + "/" + HOTEL + "/" + ADD_ROOM);
+        request.getSession().setAttribute(HOTEL, hotel);
+        modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE + "/" + HOTEL + "/" + ADD_HOTEL_ROOM);
         return modelAndView;
     }
 
-    @GetMapping(path = ADD_ROOM)
+    @GetMapping(path = ADD_HOTEL_ROOM)
     public ModelAndView setFormRoom(ModelAndView modelAndView) {
-        modelAndView.setViewName(ADD_ROOM);
         modelAndView.addObject(NEW_ROOM, new Room());
-        return modelAndView;
+        return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ROOM, ADD_HOTEL);
     }
 
-    @PostMapping(path = ADD_ROOM)
+    @PostMapping(path = ADD_HOTEL_ROOM)
     public ModelAndView getFormRoom(@Valid @ModelAttribute(NEW_ROOM) Room room, BindingResult bindingResult,
-                                    ModelAndView modelAndView, HttpServletRequest request) throws CloneNotSupportedException {
+                                    ModelAndView modelAndView, HttpServletRequest request)  {
         if (bindingResult.hasErrors()) {
-            modelAndView.setViewName(ADD_ROOM);
-            return modelAndView;
+            return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ROOM, ADD_HOTEL);
         }
-        Hotel hotel = (Hotel) request.getSession().getAttribute(NEW_HOTEL);
+        if (adminHotelService.findNumberRoom(room) != null) {
+            modelAndView.addObject(MESSAGE_ERROR, MESSAGE_ERROR_FOR_ROOM);
+            return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ROOM, ADD_HOTEL);
+        }
+        Hotel hotel = (Hotel) request.getSession().getAttribute(HOTEL);
         room.setHotel(hotel);
-       // int count = room.getCount();
         List<Room> rooms = new ArrayList<>();
-//        for (int i = 0; i < count; i++) {
-//            Room room1 = (Room) room.clone();
-//            rooms.add(room1);
-//        }
         rooms.add(room);
-        hotel.getRoomList().addAll(rooms);
-        modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE + "/" + HOTEL + "/" + CHOICE_ADD_ROOM);
-        return modelAndView;
-    }
-
-    @GetMapping(path = CHOICE_ADD_ROOM)
-    public ModelAndView choice(ModelAndView modelAndView) {
-        modelAndView.setViewName(CHOICE_ADD_ROOM);
-        return modelAndView;
-    }
-
-    @GetMapping(path = SAVE_ROOM)
-    public ModelAndView saveHotel(ModelAndView modelAndView, HttpServletRequest request) {
-        Hotel hotel = (Hotel) request.getSession().getAttribute(NEW_HOTEL);
+        hotel.setRoomList(rooms);
         adminHotelService.updateHotel(hotel);
-        modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE);
+        modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE + "/" + HOTEL + "/" + CHOICE_ADD_HOTEL_ROOM);
         return modelAndView;
+    }
+
+    @GetMapping(path = CHOICE_ADD_HOTEL_ROOM)
+    public ModelAndView choice(ModelAndView modelAndView) {
+        return ModelAndViewUtil.getModelAndView(modelAndView, CHOICE, ADD_HOTEL);
     }
 }

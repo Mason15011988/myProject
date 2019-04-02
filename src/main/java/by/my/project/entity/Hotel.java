@@ -4,6 +4,7 @@ import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,9 +25,11 @@ public class Hotel implements Serializable {
     private String name;
 
     @Column(name = "stars")
+    @NotNull(message = "Количество звезд отеля отсутствует")
     private Integer stars;
 
     @Column(name = "description")
+    @NotEmpty(message = "Описание отеля отсутствует")
     private String description;
 
     @Embedded

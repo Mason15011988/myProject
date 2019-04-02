@@ -6,24 +6,25 @@ import by.my.project.entity.Hotel;
 import by.my.project.entity.Room;
 
 public interface AdminHotelService {
+
     void addAdminHotel(AdminHotel adminHotel);
 
     void updateAdminHotel(AdminHotel adminHotel);
 
-    void updateHotel(Hotel hotel);
-
-    void deleteHotel(Hotel hotel);
-
-    Hotel findHotel(Hotel hotel);
-
+    AdminHotel findAdminHotel(AdminHotel adminHotel);
 
     AdminHotel findAdminHotelByEmail(String email);
 
-    AdminHotel findAdminHotel(AdminHotel adminHotel);
+    void updateHotel(Hotel hotel);
 
     void addHotel(Hotel hotel);
 
-    void addRoom(Room room);
+    void deleteHotel(Hotel hotel);
 
-    void addHotelAddress(AddressHotel addressHotel);
+    void deleteRoom(Room room);
+
+    void updateRoom(Room room);
+
+    Room findNumberRoom(Room room);
+
 }

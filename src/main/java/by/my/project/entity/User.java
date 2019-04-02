@@ -31,6 +31,7 @@ public class User implements Serializable {
     @NotEmpty(message = "Email отсутствует")
     private String email;
 
+
     @Column(name = "password")
     @NotEmpty(message = "Пароль отсутствует")
     private String password;

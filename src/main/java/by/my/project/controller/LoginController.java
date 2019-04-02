@@ -5,6 +5,7 @@ import by.my.project.entity.AdminHotel;
 import by.my.project.entity.User;
 import by.my.project.service.JpaAdminHotelService;
 import by.my.project.service.JpaUserService;
+import by.my.project.util.ModelAndViewUtil;
 import by.my.project.util.PasswordUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -31,15 +32,13 @@ public class LoginController {
 
     @GetMapping
     public ModelAndView login(ModelAndView modelAndView) {
-        modelAndView.setViewName(LOGIN);
-        return modelAndView;
+        return ModelAndViewUtil.getModelAndView(modelAndView, GUEST, LOGIN);
     }
 
     @GetMapping(path = USER)
     public ModelAndView setLoginFormUser(ModelAndView modelAndView) {
-        modelAndView.setViewName(LOGIN_USER);
         modelAndView.addObject(NEW_USER, new User());
-        return modelAndView;
+        return ModelAndViewUtil.getModelAndView(modelAndView, USER, LOGIN);
     }
 
     @PostMapping(path = USER)
@@ -48,14 +47,12 @@ public class LoginController {
         User userSession;
         user.setRole(Role.USER);
         if (bindingResult.hasErrors()) {
-            modelAndView.setViewName(LOGIN_USER);
-            return modelAndView;
+            return ModelAndViewUtil.getModelAndView(modelAndView, USER, LOGIN);
         }
         user.setPassword(PasswordUtil.convertPassToMD5(user.getPassword()));
         if ((userSession = userService.findUser(user)) == null) {
-            modelAndView.setViewName(LOGIN_USER);
             modelAndView.addObject(MESSAGE_ERROR, MESSAGE_ERROR_FOR_LOGIN);
-            return modelAndView;
+            return ModelAndViewUtil.getModelAndView(modelAndView, USER, LOGIN);
         }
         request.getSession().setAttribute(USER_SESSION, userSession);
         request.getSession().setAttribute(ROLE, Role.USER);
@@ -65,9 +62,8 @@ public class LoginController {
 
     @GetMapping(path = ADMIN_HOTEL)
     public ModelAndView setLoginFormAdmin(ModelAndView modelAndView) {
-        modelAndView.setViewName(LOGIN_ADMIN_HOTEL);
         modelAndView.addObject(NEW_ADMIN_HOTEL, new AdminHotel());
-        return modelAndView;
+        return ModelAndViewUtil.getModelAndView(modelAndView, ADMIN_HOTEL, LOGIN);
     }
 
     @PostMapping(path = ADMIN_HOTEL)
@@ -76,14 +72,12 @@ public class LoginController {
         AdminHotel adminHotelSession;
         adminHotel.setRole(Role.ADMIN_HOTEL);
         if (bindingResult.hasErrors()) {
-            modelAndView.setViewName(LOGIN_ADMIN_HOTEL);
-            return modelAndView;
+            return ModelAndViewUtil.getModelAndView(modelAndView, ADMIN_HOTEL, LOGIN);
         }
         adminHotel.setPassword(PasswordUtil.convertPassToMD5(adminHotel.getPassword()));
         if ((adminHotelSession = adminHotelService.findAdminHotel(adminHotel)) == null) {
-            modelAndView.setViewName(LOGIN_ADMIN_HOTEL);
             modelAndView.addObject(MESSAGE_ERROR, MESSAGE_ERROR_FOR_LOGIN);
-            return modelAndView;
+            return ModelAndViewUtil.getModelAndView(modelAndView, ADMIN_HOTEL, LOGIN);
         }
         request.getSession().setAttribute(ADMIN_HOTEL_SESSION, adminHotelSession);
         request.getSession().setAttribute(ROLE, Role.ADMIN_HOTEL);

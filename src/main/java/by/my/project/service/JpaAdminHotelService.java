@@ -16,11 +16,6 @@ import javax.persistence.NoResultException;
 @RequiredArgsConstructor
 public class JpaAdminHotelService implements AdminHotelService {
 
-    @Override
-    public void addRoom(Room room) {
-        adminHotelRepository.addRoom(room);
-    }
-
     private final JpaAdminHotelRepository adminHotelRepository;
 
     @Override
@@ -29,46 +24,18 @@ public class JpaAdminHotelService implements AdminHotelService {
     }
 
     @Override
-    public Hotel findHotel(Hotel hotel) {
-        try {
-            return adminHotelRepository.findHotel(hotel);
-        } catch (NoResultException e) {
-            return null;
-        }
-    }
-
-    @Override
-    public void deleteHotel(Hotel hotel) {
-        adminHotelRepository.deleteHotel(hotel);
-    }
-
-    @Override
-    public void updateHotel(Hotel hotel) {
-        adminHotelRepository.updateHotel(hotel);
-    }
-
-    @Override
     public void updateAdminHotel(AdminHotel adminHotel) {
         adminHotelRepository.updateAdminHotel(adminHotel);
     }
 
     @Override
+    @Transactional(readOnly = true)
     public AdminHotel findAdminHotel(AdminHotel adminHotel) {
         try {
             return adminHotelRepository.findAdminHotel(adminHotel);
         } catch (NoResultException e) {
             return null;
         }
-    }
-
-    @Override
-    public void addHotelAddress(AddressHotel addressHotel) {
-        adminHotelRepository.addHotelAddress(addressHotel);
-    }
-
-    @Override
-    public void addHotel(Hotel hotel) {
-        adminHotelRepository.addHotel(hotel);
     }
 
     @Override
@@ -80,5 +47,39 @@ public class JpaAdminHotelService implements AdminHotelService {
         } catch (NoResultException e) {
             return null;
         }
+    }
+
+    @Override
+    public void deleteHotel(Hotel hotel) {
+        adminHotelRepository.deleteHotel(hotel);
+    }
+
+    @Override
+    public void addHotel(Hotel hotel) {
+        adminHotelRepository.addHotel(hotel);
+    }
+
+    @Override
+    public void updateHotel(Hotel hotel) {
+        adminHotelRepository.updateHotel(hotel);
+    }
+
+    @Override
+    public Room findNumberRoom(Room room) {
+        try {
+            return adminHotelRepository.findNumberRoom(room);
+        }catch (NoResultException e){
+            return null;
+        }
+    }
+
+    @Override
+    public void deleteRoom(Room room) {
+        adminHotelRepository.deleteRoom(room);
+    }
+
+    @Override
+    public void updateRoom(Room room) {
+        adminHotelRepository.updateRoom(room);
     }
 }

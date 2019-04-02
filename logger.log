@@ -9475,3 +9475,1067 @@ ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreig
 ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
 ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
 ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR DispatcherServlet:502 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emf' defined in ServletContext resource [/WEB-INF/spring/context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1589)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1123)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1078)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:971)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4849)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5165)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:713)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1729)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:287)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:457)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:406)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:287)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:382)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1648)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1585)
+	... 64 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: by.my.project.entity.Emal
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 74 more
+ERROR DispatcherServlet:502 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emf' defined in ServletContext resource [/WEB-INF/spring/context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1589)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1123)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1078)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:133)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:382)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1648)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1585)
+	... 36 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: by.my.project.entity.Emal
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 46 more
+ERROR DispatcherServlet:502 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emf' defined in ServletContext resource [/WEB-INF/spring/context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1589)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1123)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1078)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:133)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:382)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1648)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1585)
+	... 36 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: by.my.project.entity.Emal
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 46 more
+ERROR DispatcherServlet:502 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emf' defined in ServletContext resource [/WEB-INF/spring/context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1589)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1123)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1078)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:133)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:382)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1648)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1585)
+	... 36 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: by.my.project.entity.Emal
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 46 more
+ERROR DispatcherServlet:502 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emf' defined in ServletContext resource [/WEB-INF/spring/context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1589)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1123)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1078)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:133)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:1249)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.access$600(EntityManagerFactoryBuilderImpl.java:120)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:860)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:850)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:425)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:849)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:382)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1648)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1585)
+	... 36 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: by.my.project.entity.Emal
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:277)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:224)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processAnnotatedClassesQueue(Configuration.java:3845)
+	at org.hibernate.cfg.Configuration$MetadataSourceQueue.processMetadata(Configuration.java:3799)
+	at org.hibernate.cfg.Configuration.secondPassCompile(Configuration.java:1412)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1846)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:857)
+	... 46 more
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR DispatcherServlet:502 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'hotelSaveController' method 
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.HotelSaveController.choice(org.springframework.web.servlet.ModelAndView)
+to {[/adminHotelSession/adminHotelProfile/hotel/choiceAddHotelRoom],methods=[GET]}: There is already 'addHotelController' bean method
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.AddHotelController.choice(org.springframework.web.servlet.ModelAndView) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1589)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1123)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1078)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:971)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4849)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5165)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:713)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1729)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:287)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:457)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:406)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:287)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'hotelSaveController' method 
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.HotelSaveController.choice(org.springframework.web.servlet.ModelAndView)
+to {[/adminHotelSession/adminHotelProfile/hotel/choiceAddHotelRoom],methods=[GET]}: There is already 'addHotelController' bean method
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.AddHotelController.choice(org.springframework.web.servlet.ModelAndView) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1648)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1585)
+	... 64 more
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR DispatcherServlet:502 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'hotelSaveController' method 
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.HotelSaveController.choice(org.springframework.web.servlet.ModelAndView)
+to {[/adminHotelSession/adminHotelProfile/hotel/choiceAddHotelRoom],methods=[GET]}: There is already 'addHotelController' bean method
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.AddHotelController.choice(org.springframework.web.servlet.ModelAndView) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1589)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1123)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1078)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:133)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'hotelSaveController' method 
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.HotelSaveController.choice(org.springframework.web.servlet.ModelAndView)
+to {[/adminHotelSession/adminHotelProfile/hotel/choiceAddHotelRoom],methods=[GET]}: There is already 'addHotelController' bean method
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.AddHotelController.choice(org.springframework.web.servlet.ModelAndView) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1648)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1585)
+	... 36 more
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR DispatcherServlet:502 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'hotelSaveController' method 
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.HotelSaveController.choice(org.springframework.web.servlet.ModelAndView)
+to {[/adminHotelSession/adminHotelProfile/hotel/choiceAddHotelRoom],methods=[GET]}: There is already 'addHotelController' bean method
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.AddHotelController.choice(org.springframework.web.servlet.ModelAndView) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1589)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1123)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1078)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:133)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'hotelSaveController' method 
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.HotelSaveController.choice(org.springframework.web.servlet.ModelAndView)
+to {[/adminHotelSession/adminHotelProfile/hotel/choiceAddHotelRoom],methods=[GET]}: There is already 'addHotelController' bean method
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.AddHotelController.choice(org.springframework.web.servlet.ModelAndView) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1648)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1585)
+	... 36 more
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR DispatcherServlet:502 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'hotelSaveController' method 
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.HotelSaveController.choice(org.springframework.web.servlet.ModelAndView)
+to {[/adminHotelSession/adminHotelProfile/hotel/choiceAddHotelRoom],methods=[GET]}: There is already 'addHotelController' bean method
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.AddHotelController.choice(org.springframework.web.servlet.ModelAndView) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1589)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1123)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1078)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:133)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:668)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'hotelSaveController' method 
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.HotelSaveController.choice(org.springframework.web.servlet.ModelAndView)
+to {[/adminHotelSession/adminHotelProfile/hotel/choiceAddHotelRoom],methods=[GET]}: There is already 'addHotelController' bean method
+public org.springframework.web.servlet.ModelAndView by.my.project.controller.AddHotelController.choice(org.springframework.web.servlet.ModelAndView) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1648)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1585)
+	... 36 more
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_71txc5ag5li0hpgmldhx2u5ra
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table dates drop foreign key FK_outqh5inx0oq0d48h66iuwnql
+ERROR SchemaExport:427 - Table 'bookhotel.dates' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotels drop foreign key FK_rbcwcgf512ud64f2aff4e6mp2
+ERROR SchemaExport:427 - Table 'bookhotel.hotels' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table rooms drop foreign key FK_sxlv78ft3roqntc0quiy8pb7b
+ERROR SchemaExport:427 - Table 'bookhotel.rooms' doesn't exist

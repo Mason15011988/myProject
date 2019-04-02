@@ -12,18 +12,22 @@ public interface AdminHotelRepository {
 
     AdminHotel findAdminHotel(AdminHotel adminHotel);
 
+    void updateAdminHotel(AdminHotel adminHotel);
+
     void addHotel(Hotel hotel);
 
     Hotel findHotel(Hotel hotel);
 
     void deleteHotel(Hotel hotel);
 
-    void addRoom(Room room);
-
-    void addHotelAddress(AddressHotel addressHotel);
-
-    void updateAdminHotel(AdminHotel adminHotel);
-
     void updateHotel(Hotel hotel);
+
+    Room findRoom(Room room);
+
+    Room findNumberRoom(Room room);
+
+    void deleteRoom(Room room);
+
+    void updateRoom(Room room);
 
 }
