@@ -39,6 +39,7 @@ public final class Constants {
     public static final String NEW_ADMIN_HOTEL = "newAdminHotel";
     public static final String NEW_ADDRESS = "newAddress";
     public static final String NEW_HOTEL = "newHotel";
+    public static final String BOOKING = "booking";
     public static final String NEW_ROOM = "newRoom";
     public static final String ADD_HOTEL = "addHotel";
     public static final String ADD_HOTEL_ROOM = "addHotelRoom";

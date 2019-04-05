@@ -58,8 +58,8 @@
                      action="${pageContext.request.contextPath}/adminHotelSession/adminHotelProfile/hotel/addHotelRoom">
             <h5>Заполните описание комнаты</h5>
             <br>Количество мест в номере<br>
-            <spring:input path="numberSeat"/>
-            <div><spring:errors cssStyle="color: red" path="numberSeat"/></div>
+            <spring:input path="numberOfSeats"/>
+            <div><spring:errors cssStyle="color: red" path="numberOfSeats"/></div>
             <br>Цена за день($)<br>
             <spring:input path="price"/>
             <div><spring:errors cssStyle="color: red" path="price"/></div>

@@ -104,7 +104,7 @@ public class EditHotelController {
         Hotel hotel = (Hotel) request.getSession().getAttribute(HOTEL);
         Integer id = (Integer) request.getSession().getAttribute(ID);
         Room roomForUpdate = hotel.getRoomList().get(id);
-        roomForUpdate.setNumberSeat(room.getNumberSeat());
+        roomForUpdate.setNumberOfSeats(room.getNumberOfSeats());
         roomForUpdate.setPrice(room.getPrice());
         roomForUpdate.setNumberRoom(room.getNumberRoom());
         adminHotelService.updateRoom(roomForUpdate);

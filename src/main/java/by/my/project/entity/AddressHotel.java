@@ -5,10 +5,11 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
 @Data
 @Embeddable
-public class AddressHotel {
+public class AddressHotel implements Serializable {
 
     @Column(name = "country")
     @NotEmpty(message = "Страна отсутствует")

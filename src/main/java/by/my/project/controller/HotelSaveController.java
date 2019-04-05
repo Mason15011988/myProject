@@ -30,13 +30,13 @@ public class HotelSaveController {
     private final JpaAdminHotelService adminHotelService;
 
     @GetMapping(path = ADD_HOTEL_ADDRESS)
-    public ModelAndView setFormAddress(ModelAndView modelAndView) {
+    public ModelAndView hotelAddressSetForm(ModelAndView modelAndView) {
         modelAndView.addObject(NEW_ADDRESS, new AddressHotel());
         return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ADDRESS, ADD_HOTEL);
     }
 
     @PostMapping(path = ADD_HOTEL_ADDRESS)
-    public ModelAndView getFormAddress(@Valid @ModelAttribute(NEW_ADDRESS) AddressHotel addressHotel,
+    public ModelAndView hotelAddressGetForm(@Valid @ModelAttribute(NEW_ADDRESS) AddressHotel addressHotel,
                                        BindingResult bindingResult,
                                        ModelAndView modelAndView, HttpServletRequest request) {
         if (bindingResult.hasErrors()) {
@@ -48,13 +48,13 @@ public class HotelSaveController {
     }
 
     @GetMapping(path = ADD_HOTEL)
-    public ModelAndView setFormHotel(ModelAndView modelAndView) {
+    public ModelAndView hotelSetForm(ModelAndView modelAndView) {
         modelAndView.addObject(NEW_HOTEL, new Hotel());
         return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL, ADD_HOTEL);
     }
 
     @PostMapping(path = ADD_HOTEL)
-    public ModelAndView getFormHotel(@Valid @ModelAttribute(NEW_HOTEL) Hotel hotel, BindingResult bindingResult,
+    public ModelAndView hotelGetForm(@Valid @ModelAttribute(NEW_HOTEL) Hotel hotel, BindingResult bindingResult,
                                      ModelAndView modelAndView, HttpServletRequest request) {
         if (bindingResult.hasErrors()) {
             return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL, ADD_HOTEL);
@@ -71,23 +71,23 @@ public class HotelSaveController {
     }
 
     @GetMapping(path = ADD_HOTEL_ROOM)
-    public ModelAndView setFormRoom(ModelAndView modelAndView) {
+    public ModelAndView hotelRoomSetForm(ModelAndView modelAndView) {
         modelAndView.addObject(NEW_ROOM, new Room());
         return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ROOM, ADD_HOTEL);
     }
 
     @PostMapping(path = ADD_HOTEL_ROOM)
-    public ModelAndView getFormRoom(@Valid @ModelAttribute(NEW_ROOM) Room room, BindingResult bindingResult,
+    public ModelAndView hotelRoomGetForm(@Valid @ModelAttribute(NEW_ROOM) Room room, BindingResult bindingResult,
                                     ModelAndView modelAndView, HttpServletRequest request)  {
         if (bindingResult.hasErrors()) {
             return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ROOM, ADD_HOTEL);
         }
+        Hotel hotel = (Hotel) request.getSession().getAttribute(HOTEL);
+        room.setHotel(hotel);
         if (adminHotelService.findNumberRoom(room) != null) {
             modelAndView.addObject(MESSAGE_ERROR, MESSAGE_ERROR_FOR_ROOM);
             return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ROOM, ADD_HOTEL);
         }
-        Hotel hotel = (Hotel) request.getSession().getAttribute(HOTEL);
-        room.setHotel(hotel);
         List<Room> rooms = new ArrayList<>();
         rooms.add(room);
         hotel.setRoomList(rooms);

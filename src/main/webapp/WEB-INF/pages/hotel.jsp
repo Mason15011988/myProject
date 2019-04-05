@@ -94,7 +94,7 @@
             <tbody>
             <tr>
                 <td class="single line" style="text-align: center">
-                        ${room.numberSeat}
+                        ${room.numberOfSeats}
                 </td>
                 <td style="text-align: center">
                         ${room.price}

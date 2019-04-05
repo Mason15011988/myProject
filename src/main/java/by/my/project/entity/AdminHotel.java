@@ -6,18 +6,17 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 @Data
 @Entity
-@Table(name = "admins_hotel")
+@Table(name = "admin_hotel")
 public class AdminHotel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "admin_id")
+    @Column(name = "id")
     private Integer id;
 
     @Email

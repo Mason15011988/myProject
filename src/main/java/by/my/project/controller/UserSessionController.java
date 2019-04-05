@@ -29,7 +29,7 @@ public class UserSessionController {
     }
 
     @GetMapping(path = USER_PROFILE)
-    public ModelAndView adminProfile(ModelAndView modelAndView, HttpServletRequest request) {
+    public ModelAndView userProfile(ModelAndView modelAndView, HttpServletRequest request) {
         User user = (User) request.getSession().getAttribute(USER_SESSION);
         modelAndView.addObject(USER_SESSION, user);
         return ModelAndViewUtil.getModelAndView(modelAndView, USER, PROFILE);

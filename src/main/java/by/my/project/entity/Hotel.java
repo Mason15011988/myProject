@@ -12,12 +12,12 @@ import java.util.Map;
 
 @Data
 @Entity
-@Table(name = "hotels")
+@Table(name = "hotel")
 public class Hotel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "hotel_id")
+    @Column(name = "id")
     private Integer id;
 
     @Column(name = "name_hotel")

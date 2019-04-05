@@ -23,19 +23,19 @@ public class EditUserController {
     private final JpaUserService userService;
 
     @GetMapping(path = EDIT_USER)
-    public ModelAndView adminProfileEdit(ModelAndView modelAndView, HttpServletRequest request) {
+    public ModelAndView userEdit(ModelAndView modelAndView, HttpServletRequest request) {
         User user = (User) request.getSession().getAttribute(USER_SESSION);
         modelAndView.addObject(USER_SESSION, user);
         return ModelAndViewUtil.getModelAndView(modelAndView, USER, EDIT_USER);
     }
 
     @GetMapping(path = EDIT_USER_EMAIL)
-    public ModelAndView adminProfileEditEmailSetForm(ModelAndView modelAndView) {
+    public ModelAndView userEditEmailSetForm(ModelAndView modelAndView) {
         return ModelAndViewUtil.getModelAndView(modelAndView, EMAIL, EDIT_USER);
     }
 
     @PostMapping(path = EDIT_USER_EMAIL)
-    public ModelAndView adminProfileEditEmailGetForm(@RequestParam(EMAIL) String email, HttpServletRequest request,
+    public ModelAndView userEditEmailGetForm(@RequestParam(EMAIL) String email, HttpServletRequest request,
                                                      ModelAndView modelAndView) {
         if (email.equals("")) {
             modelAndView.addObject(MESSAGE_ERROR, MESSAGE_ERROR_FOR_EMAIL);
@@ -53,12 +53,12 @@ public class EditUserController {
     }
 
     @GetMapping(path = EDIT_USER_PASSWORD)
-    public ModelAndView adminProfileEditPasswordSetForm(ModelAndView modelAndView) {
+    public ModelAndView userEditPasswordSetForm(ModelAndView modelAndView) {
         return ModelAndViewUtil.getModelAndView(modelAndView, PASSWORD, EDIT_USER);
     }
 
     @PostMapping(path = EDIT_USER_PASSWORD)
-    public ModelAndView adminProfileEditPasswordGetForm(@RequestParam(PASSWORD) String password,
+    public ModelAndView userEditPasswordGetForm(@RequestParam(PASSWORD) String password,
                                                         @RequestParam(NEW_PASSWORD) String newPassword,
                                                         @RequestParam(REPEAT_NEW_PASSWORD) String repeatNewPassword,
                                                         HttpServletRequest request, ModelAndView modelAndView) {

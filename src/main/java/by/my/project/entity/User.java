@@ -6,15 +6,15 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 
 @Data
 @Entity
-@Table(name = "users")
+@Table(name = "user")
 @NamedQueries(
         {@NamedQuery(name = "User.findUser",
         query = "select u from User u where u.email = :email and u.password = :password"),
@@ -23,7 +23,7 @@ import java.util.List;
 public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
+    @Column(name = "id")
     private Long id;
 
     @Email
@@ -44,8 +44,8 @@ public class User implements Serializable {
     private Role role;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_date")
-    private List<DateOfBooking> dateOfBookingList;
+    @JoinColumn(name = "date_id")
+    private List<Reservation> reservationList = new ArrayList<>();
 
     @PrePersist
     void prePersist() {

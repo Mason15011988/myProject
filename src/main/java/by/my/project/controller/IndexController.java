@@ -1,9 +1,11 @@
 package by.my.project.controller;
 
 import by.my.project.constant.Role;
-import by.my.project.entity.DateOfBooking;
+import by.my.project.entity.Reservation;
+import by.my.project.entity.Room;
 import by.my.project.entity.Search;
 import by.my.project.service.JpaUserService;
+import by.my.project.util.FormatDateUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,9 +16,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.sql.Date;
-import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 import static by.my.project.constant.Constants.*;
+
 @RequiredArgsConstructor
 @Controller
 @RequestMapping(path = "/")
@@ -31,12 +38,14 @@ public class IndexController {
     }
 
     @PostMapping
-    public ModelAndView indexSearch(@RequestParam("country") String country, @RequestParam("numberSeat") String numberSeat,
-                                    @RequestParam("startDate") Date startDate, @RequestParam("endDate") Date endDate,
+    public ModelAndView indexSearch(@RequestParam("city") String city, @RequestParam("numberOfSeats") String numberOfSeats,
+                                    @RequestParam("startDate") Date startDateForm, @RequestParam("endDate") Date endDateForm,
                                     ModelAndView modelAndView) {
-        Date nowDate = new Date(System.currentTimeMillis());
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-        if (sdf.format(startDate).compareTo(sdf.format(nowDate)) < 0) {
+
+        LocalDate localDate = LocalDate.now();
+        LocalDate startDate = FormatDateUtil.format(startDateForm);
+        LocalDate endDate = FormatDateUtil.format(endDateForm);
+        if (startDate.compareTo(localDate) < 0) {
             modelAndView.addObject("errorNowDate", "дата должна быть больше или равна текущей ");
             modelAndView.setViewName("index");
             return modelAndView;
@@ -47,21 +56,28 @@ public class IndexController {
             return modelAndView;
         }
 
+        Set<LocalDate> dates = new TreeSet<>();
+        for (LocalDate i = startDate; i.compareTo(endDate) <= 0; i = i.plusDays(1)) {
+            dates.add(i);
+        }
         Search search = new Search();
-        search.setCountry(country);
-
-//         java.util.Date date = new java.util.Date(startDate.getTime());
-//         java.util.Date date2 = new java.util.Date(endDate.getTime());
-
-        search.setNumberSeat(Integer.valueOf(numberSeat));
+        search.setCity(city);
+        search.setNumberOfSeats(Integer.valueOf(numberOfSeats));
         search.setStartDate(startDate);
         search.setEndDate(endDate);
-        DateOfBooking dateOfBooking = new DateOfBooking();
+        search.setDates(dates);
 
-        dateOfBooking.setStartDate(startDate);
-        dateOfBooking.setEndDate(endDate);
-        userService.addDate(dateOfBooking);
-        modelAndView.addObject("search", search);
+        Reservation reservation = new Reservation();
+        reservation.setStartDate(startDate);
+        reservation.setEndDate(endDate);
+        userService.addDate(reservation);
+        List<Room> roomsBySearchAddress = userService.searchRoomByAddressHotelAndNumberOfSeats(search);
+        List<Room> roomsBySearchDate = userService.searchRoomByDates(search);
+
+
+        modelAndView.addObject("roomsAddress", roomsBySearchAddress);
+        modelAndView.addObject("roomsDates", roomsBySearchDate);
+
         modelAndView.setViewName("index");
         return modelAndView;
     }

@@ -5,6 +5,7 @@ import by.my.project.entity.AdminHotel;
 import by.my.project.entity.Hotel;
 import by.my.project.entity.Room;
 import by.my.project.repository.JpaAdminHotelRepository;
+import javassist.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -65,10 +66,13 @@ public class JpaAdminHotelService implements AdminHotelService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public Room findNumberRoom(Room room) {
         try {
             return adminHotelRepository.findNumberRoom(room);
         }catch (NoResultException e){
+            return null;
+        }catch (NullPointerException e){
             return null;
         }
     }

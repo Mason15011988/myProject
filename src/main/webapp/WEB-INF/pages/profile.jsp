@@ -52,6 +52,8 @@
                 </th>
                 <th><a href="${pageContext.request.contextPath}/userSession">
                     Мои бронировиния</a></th>
+                <th><a href="${pageContext.request.contextPath}/userSession/userProfile/booking">
+                    Бронировиние</a></th>
             </tr>
         </table>
     </div>

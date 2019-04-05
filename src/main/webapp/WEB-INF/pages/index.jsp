@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <style>
@@ -26,11 +27,11 @@ ${search}
         <table>
             <tr>
                 <th>Страна<br>
-                    <input type="text"  name="country" />
+                    <input type="text"  name="city" />
                 </th>
                 <th>
                     Количкство мест<br>
-                    <input type="text" name="numberSeat"/>
+                    <input type="text" name="numberOfSeats"/>
                 </th>
                 <th>
                     Заезд<br>
@@ -57,5 +58,38 @@ ${search}
         </table>
     </form>
 </div>
+
+<c:if test="${roomsDates.size() > 0}">
+    <p>Отели:</p>
+    <ul>
+
+        <c:forEach var="room" items="${roomsDates}">
+            <li>
+                ${room.id}<br>
+                ${room.hotel.name}<br>
+                ${room.hotel.addressHotel.city}<br>
+                ${room.numberOfSeats}<br>
+            </li>
+
+        </c:forEach>
+    </ul>
+</c:if>
+<c:if test="${roomsAddress.size() > 0}">
+    <p>Отели:</p>
+    <ul>
+
+        <c:forEach var="room" items="${roomsAddress}">
+            <li>
+                    ${room.id}<br>
+                    ${room.hotel.name}<br>
+                    ${room.hotel.addressHotel.city}<br>
+                    ${room.numberOfSeats}<br>
+            </li>
+
+        </c:forEach>
+    </ul>
+</c:if>
+
+
 </body>
 </html>

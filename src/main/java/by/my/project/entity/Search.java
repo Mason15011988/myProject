@@ -1,16 +1,18 @@
 package by.my.project.entity;
 
 import lombok.Data;
-import org.hibernate.validator.constraints.NotEmpty;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Set;
 
 @Data
 public class Search {
-    @NotEmpty(message = "error")
-    private String country;
-    private Integer numberSeat;
-    private Date startDate;
-    private Date endDate;
+    private String city;
+    private Integer numberOfSeats;
+    private LocalDate startDate;
+    private LocalDate endDate;
+    private Set<LocalDate> dates;
+
 
 }

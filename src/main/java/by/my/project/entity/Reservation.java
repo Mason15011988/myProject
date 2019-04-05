@@ -4,30 +4,28 @@ import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.io.Serializable;
+import java.sql.Date;
+import java.time.LocalDate;
 
 @Data
 @Entity
-@Table(name = "dates")
-public class DateOfBooking {
+@Table(name = "reservation")
+public class Reservation implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "date_id")
+    @Column(name = "id")
     private Integer id;
 
     @Column(name = "start_date")
-    @Temporal(TemporalType.DATE)
-   // @NotEmpty(message = "заполните")
-    private Date startDate;
+    private LocalDate startDate;
 
     @Column(name = "end_date")
-    @Temporal(TemporalType.DATE)
-   // @NotEmpty(message = "заполните")
-    private Date endDate;
+    private LocalDate endDate;
 
     @ManyToOne
-    //@JoinColumn(name = "room_id")
+    @JoinColumn(name = "room_id")
     private Room room;
 
 //    @ManyToOne

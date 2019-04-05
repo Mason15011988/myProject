@@ -76,9 +76,10 @@ public class JpaAdminHotelRepository implements AdminHotelRepository {
 
     @Override
     public Room findNumberRoom(Room room) {
-        String sql = "from Room where numberRoom = ?1";
+        String sql = "from Room where numberRoom = ?1 and hotel.id =?2";
         return (Room) entityManager.createQuery(sql).
                 setParameter(1, room.getNumberRoom()).
+                setParameter(2,room.getHotel().getId()).
                 getSingleResult();
     }
 
