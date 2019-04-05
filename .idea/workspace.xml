@@ -7,39 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c93e788-55ed-43ec-b1f3-3d1b5c3aceef" name="Default Changelist" comment="one week">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/BookingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Calendar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/LocalDateAttributeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/my/project/util/FormatDateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/booking.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2a5cc90a-219c-47fe-bd8a-9c871f717134.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c69f6962-92bb-4cb5-85e9-9f20ceefe86a.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/logger.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/constant/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditHotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditHotelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/HotelSaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/HotelSaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/UserSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/UserSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/AddressHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/AddressHotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/AdminHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/AdminHotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/DateOfBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaAdminHotelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaAdminHotelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/service/JpaAdminHotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/service/JpaAdminHotelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/service/JpaUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/service/JpaUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/bootstrap-grid.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/bootstrap-grid.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/bootstrap-grid.min.css" afterDir="false" />
@@ -60,12 +28,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/bootstrap.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/bootstrap.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addHotel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addHotel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editHotel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editHotel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hotel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hotel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/session.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/session.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/my/project/aspect/LoggerAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/my/project/aspect/LoggerAspect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/my/project/constant/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/my/project/constant/Constants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/my/project/constant/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/my/project/constant/Role.class" afterDir="false" />
@@ -305,7 +267,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/BookingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
+            <state relative-caret-position="1020">
               <caret line="78" column="46" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -317,28 +279,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/booking.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="935">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hotel.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/entity/Calendar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="374">
               <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
-                <element signature="e#675#676#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -347,14 +305,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/entity/Room.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-37">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1379#1380#0" expanded="true" />
-                <element signature="e#1632#1633#0" expanded="true" />
-                <element signature="e#1656#1657#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="697">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -362,21 +314,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaUserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="595">
               <caret line="44" column="110" selection-start-line="44" selection-start-column="110" selection-end-line="44" selection-end-column="110" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/entity/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="47" column="64" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
               <folding>
-                <element signature="e#2067#2068#0" expanded="true" />
-                <element signature="e#2114#2115#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/entity/User.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/util/LocalDateAttributeConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="47" column="64" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
+            <state relative-caret-position="136">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -816,6 +776,7 @@
       <workItem from="1554270857292" duration="12711000" />
       <workItem from="1554313594397" duration="8871000" />
       <workItem from="1554354137227" duration="32583000" />
+      <workItem from="1554483099855" duration="176000" />
     </task>
     <task id="LOCAL-00001" summary="log file">
       <created>1552372770994</created>
@@ -852,7 +813,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554195807762</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add calendar">
+      <created>1554483274468</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554483274468</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -860,6 +828,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3611111" visible="true" weight="0.2730711" />
       <window_info id="Structure" order="1" sideWeight="0.6388889" side_tool="true" weight="0.27760968" />
@@ -948,7 +917,8 @@
     <MESSAGE value="add rooms-list&#10;no number room" />
     <MESSAGE value="rooms are added one by one&#10;add edit and remove Hotel &#10;add edit  HotelAddress" />
     <MESSAGE value="edit jsp pages&#10;edit and add controller directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit jsp pages&#10;edit and add controller directory" />
+    <MESSAGE value="add calendar" />
+    <option name="LAST_COMMIT_MESSAGE" value="add calendar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
