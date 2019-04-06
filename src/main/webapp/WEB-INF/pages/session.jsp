@@ -34,8 +34,8 @@
                     Личный кабинет</a></th>
                 <th style="text-align: center"><a  href="${pageContext.request.contextPath}/exit">
                     Выход</a></th>
-                <th style="text-align: center"><a  href="${pageContext.request.contextPath}/userSession/userProfile/booking">
-                    Бронь</a></th>
+                <th style="text-align: center"><a  href="${pageContext.request.contextPath}/userSession/booking">
+                    Бронирование</a></th>
             </tr>
         </table>
     </div>

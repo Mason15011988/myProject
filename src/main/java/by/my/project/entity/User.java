@@ -44,7 +44,7 @@ public class User implements Serializable {
     private Role role;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "date_id")
+    @JoinColumn(name = "user_id")
     private List<Reservation> reservationList = new ArrayList<>();
 
     @PrePersist

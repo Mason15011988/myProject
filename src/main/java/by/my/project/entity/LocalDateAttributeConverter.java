@@ -1,4 +1,4 @@
-package by.my.project.util;
+package by.my.project.entity;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;

@@ -24,6 +24,9 @@ public class Reservation implements Serializable {
     @Column(name = "end_date")
     private LocalDate endDate;
 
+    @Column(name = "price")
+    private Integer price;
+
     @ManyToOne
     @JoinColumn(name = "room_id")
     private Room room;

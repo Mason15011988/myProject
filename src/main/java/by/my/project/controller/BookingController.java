@@ -5,10 +5,7 @@ import by.my.project.service.JpaUserService;
 import by.my.project.util.FormatDateUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -22,33 +19,34 @@ import static by.my.project.constant.Constants.*;
 
 @Controller
 @RequiredArgsConstructor
-@RequestMapping(path = USER_SESSION + "/" + USER_PROFILE)
+@RequestMapping(path = USER_SESSION)
 public class BookingController {
     private final JpaUserService userService;
 
     @GetMapping(path = BOOKING)
     public ModelAndView searchRoom(ModelAndView modelAndView) {
-        modelAndView.addObject("newSearch", new Search());
+        modelAndView.addObject(NEW_SEARCH, new Search());
+        modelAndView.addObject(FLAG_BOOKING, true);
         modelAndView.setViewName(BOOKING);
         return modelAndView;
     }
 
     @PostMapping(path = BOOKING)
-    public ModelAndView searchRoomGetForm(@RequestParam("city") String city, @RequestParam("numberOfSeats") String numberOfSeats,
-                                          @RequestParam("startDate") Date startDateForm, @RequestParam("endDate") Date endDateForm,
+    public ModelAndView searchRoomGetForm(@RequestParam(CITY) String city, @RequestParam(NUMBER_OF_SEATS) String numberOfSeats,
+                                          @RequestParam(START_DATE) Date startDateForm, @RequestParam(END_DATE) Date endDateForm,
                                           ModelAndView modelAndView, HttpServletRequest request) {
 
         LocalDate localDate = LocalDate.now();
         LocalDate startDate = FormatDateUtil.format(startDateForm);
         LocalDate endDate = FormatDateUtil.format(endDateForm);
         if (startDate.compareTo(localDate) < 0) {
-            modelAndView.addObject("errorNowDate", "дата должна быть больше или равна текущей ");
-            modelAndView.setViewName("index");
+            modelAndView.addObject(MESSAGE_ERROR, MESSAGE_ERROR_FOR_DATE);
+            modelAndView.setViewName(BOOKING);
             return modelAndView;
         }
         if (endDate.compareTo(startDate) < 0) {
-            modelAndView.addObject("errorDate", "дата отьезда должна быть больше даты заезда");
-            modelAndView.setViewName("index");
+            modelAndView.addObject(MESSAGE_ERROR, MESSAGE_ERROR_FOR_DATE_END);
+            modelAndView.setViewName(BOOKING);
             return modelAndView;
         }
 
@@ -56,56 +54,82 @@ public class BookingController {
         for (LocalDate i = startDate; i.compareTo(endDate) <= 0; i = i.plusDays(1)) {
             dates.add(i);
         }
+        Integer days = dates.size();
+        modelAndView.addObject(DAYS, days);
+        modelAndView.addObject(FLAG_BOOKING, false);
         Search search = getSearch(city, numberOfSeats, startDate, endDate, dates);
-
+        request.getSession().setAttribute(NEW_SEARCH, search);
         List<Room> roomsBySearchAddress = userService.searchRoomByAddressHotelAndNumberOfSeats(search);
         if (roomsBySearchAddress.size() < 1) {
-            modelAndView.addObject("no hotel", "ho hotel");
+            modelAndView.addObject(MESSAGE_ERROR, NO_HOTEL);
             modelAndView.setViewName(BOOKING);
             return modelAndView;
         }
         List<Room> roomsBySearchDate = userService.searchRoomByDates(search);
-        if (roomsBySearchDate.size() < 1){
-            modelAndView.addObject("roomsSearch",roomsBySearchAddress);
+        if (roomsBySearchDate.size() < 1) {
+            request.getSession().setAttribute(ROOMS_SEARCH, roomsBySearchAddress);
+            modelAndView.addObject(ROOMS_SEARCH, roomsBySearchAddress);
             modelAndView.setViewName(BOOKING);
             return modelAndView;
         }
         roomsBySearchAddress.removeAll(roomsBySearchDate);
-        if (roomsBySearchAddress.size()<1){
-            modelAndView.addObject("no hotel", "ho hotel");
+        if (roomsBySearchAddress.size() < 1) {
+            modelAndView.addObject(MESSAGE_ERROR, NO_HOTEL);
             modelAndView.setViewName(BOOKING);
             return modelAndView;
         }
-modelAndView.addObject("no hotel","no hotel");
+        request.getSession().setAttribute(ROOMS_SEARCH, roomsBySearchAddress);
+        modelAndView.addObject(ROOMS_SEARCH, roomsBySearchAddress);
         modelAndView.setViewName(BOOKING);
         return modelAndView;
-
-//        modelAndView.addObject("roomsAddress", roomsBySearchAddress);
-//        modelAndView.addObject("roomsDates", roomsBySearchDate);
-//        Room room = roomsBySearchAddress.get(0);
-//
-//        Reservation reservation = new Reservation();
-//        reservation.setStartDate(startDate);
-//        reservation.setEndDate(endDate);
-//        reservation.setRoom(room);
-//        User user = (User) request.getSession().getAttribute(USER_SESSION);
-//        user.getReservationList().add(reservation);
-//        userService.updateUser(user);
-//        Set<Calendar> calendars = new TreeSet<>();
-//        for (LocalDate i = startDate; i.compareTo(endDate) <= 0; i = i.plusDays(1)) {
-//            Calendar calendar = new Calendar();
-//            calendar.setDate(i);
-//            calendar.getRoom().add(room);
-//            calendars.add(calendar);
-//            userService.addCalendar(calendar);
-//
-//        }
-//        room.setCalendar(calendars);
-//        userService.updateRoom(room);
-//        // userService.addDate(reservation);
     }
 
-    private Search getSearch(@RequestParam("city") String city, @RequestParam("numberOfSeats") String numberOfSeats,
+    @GetMapping(path = BOOKING + "/" + HOTEL_SHOW)
+    public ModelAndView showHotel(@PathVariable(ID) Integer id, HttpServletRequest request,
+                                  ModelAndView modelAndView) {
+        List<Room> rooms = (List<Room>) request.getSession().getAttribute(ROOMS_SEARCH);
+        Room room = rooms.get(id);
+        modelAndView.addObject(ROOM_SEARCH, room);
+        modelAndView.setViewName(HOTEL_FROM_SEARCH);
+        return modelAndView;
+    }
+
+    @GetMapping(path = BOOKING + "/" + RESERVATION_ROOM)
+    public ModelAndView reservationRoom(@PathVariable(ID) Integer id, HttpServletRequest request,
+                                        ModelAndView modelAndView) {
+        List<Room> rooms = (List<Room>) request.getSession().getAttribute(ROOMS_SEARCH);
+        Room roomForReservation = rooms.get(id);
+        Search searchForReservation = (Search) request.getSession().getAttribute(NEW_SEARCH);
+        Integer days = (Integer) request.getSession().getAttribute(DAYS);
+
+        Reservation reservation = getReservation(roomForReservation, searchForReservation, days);
+        User user = (User) request.getSession().getAttribute(USER_SESSION);
+        user.getReservationList().add(reservation);
+        userService.updateUser(user);
+        Set<Calendar> calendars = new TreeSet<>();
+        for (LocalDate i = searchForReservation.getStartDate(); i.compareTo(searchForReservation.getEndDate()) <= 0; i = i.plusDays(1)) {
+            Calendar calendar = new Calendar();
+            calendar.setDate(i);
+            calendar.getRoom().add(roomForReservation);
+            calendars.add(calendar);
+            userService.addCalendar(calendar);
+        }
+        roomForReservation.setCalendar(calendars);
+        userService.updateRoom(roomForReservation);
+        modelAndView.setViewName(REDIRECT + USER_SESSION);
+        return modelAndView;
+    }
+
+    private Reservation getReservation(Room roomForReservation, Search searchForReservation, Integer days) {
+        Reservation reservation = new Reservation();
+        reservation.setStartDate(searchForReservation.getStartDate());
+        reservation.setEndDate(searchForReservation.getEndDate());
+        reservation.setRoom(roomForReservation);
+        reservation.setPrice(days * roomForReservation.getPrice());
+        return reservation;
+    }
+
+    private Search getSearch(@RequestParam(CITY) String city, @RequestParam(NUMBER_OF_SEATS) String numberOfSeats,
                              LocalDate startDate, LocalDate endDate, Set<LocalDate> dates) {
         Search search = new Search();
         search.setCity(city);
@@ -115,4 +139,6 @@ modelAndView.addObject("no hotel","no hotel");
         search.setDates(dates);
         return search;
     }
+
+
 }

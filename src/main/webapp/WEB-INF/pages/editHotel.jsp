@@ -65,7 +65,7 @@
             <div><spring:errors cssStyle="color: red" path="price"/></div>
             <br>Номер комнаты <br>
             <spring:input path="numberRoom"/>
-            <div style="color: red"><spring:errors path="price"/> ${messageError}</div>
+            <div style="color: red"><spring:errors path="numberRoom"/> ${messageError}</div>
             <br>
             <p><spring:button>Редактировать</spring:button></p>
         </spring:form>

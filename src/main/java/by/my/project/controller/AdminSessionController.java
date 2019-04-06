@@ -41,12 +41,12 @@ public class AdminSessionController {
     @GetMapping(path = HOTELS)
     public ModelAndView showHotels(ModelAndView modelAndView, HttpServletRequest request) {
         AdminHotel adminHotelSession = (AdminHotel) request.getSession().getAttribute(ADMIN_HOTEL_SESSION);
-        AdminHotel adminHotel1 = adminHotelService.findAdminHotel(adminHotelSession);
-        modelAndView.setViewName(HOTELS);
-        List<Hotel> hotels = adminHotel1.getHotelList();
+        AdminHotel adminHotel = adminHotelService.findAdminHotel(adminHotelSession);
+        List<Hotel> hotels = adminHotel.getHotelList();
         if (hotels.size() == 0) {
             modelAndView.addObject(MESSAGE_ERROR, NO_HOTEL);
             modelAndView.addObject(HOTELS, hotels);
+            modelAndView.setViewName(HOTELS);
             return modelAndView;
         }
 

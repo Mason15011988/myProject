@@ -3,14 +3,14 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
-    <%--<style>--%>
-    <%--<%@include file="../static/css/bootstrap.min.css"%>--%>
-    <%--</style>--%>
+    <style>
+    <%@include file="../static/css/bootstrap.min.css"%>
+    </style>
     <title>Hotel</title>
 </head>
 <body>
 <table class="ui fixed single line celled table" style="width: 80%">
-    <h3>Описание отеля </h3>
+    <h5>Описание отеля: </h5>
     <thead>
     <tr style="text-align: center">
         <th class="single line">Название отеля</th>
@@ -39,7 +39,7 @@
 </table>
 
 <table class="ui fixed single line celled table" style="width: 70%">
-    <h3>Адрес отеля </h3>
+    <h5>Адрес отеля:</h5>
     <thead>
     <tr style="text-align: center">
         <th class="single line">Страна</th>
@@ -72,14 +72,13 @@
 </table>
 
 <c:if test="${hotel.roomList.size()== 0}">
-    <p>Комнат нет</p>
+    <h5>Комнат нет</h5>
     <a href="${pageContext.request.contextPath}/adminHotelSession/adminHotelProfile/hotel/addHotelRoom">Добавить комнату</a>
 </c:if>
 
 <c:if test="${hotel.roomList.size() > 0}">
-    <p>Комнаты:</p>
+    <h5>Комнаты:</h5>
     <%int id = 0;%>
-    <c:forEach var="room" items="${hotel.roomList}">
         <table class="ui fixed single line celled table" style="width: 80%">
             <thead>
             <tr style="text-align: center">
@@ -91,24 +90,28 @@
 
             </tr>
             </thead>
+            <c:forEach var="room" items="${hotel.roomList}">
             <tbody>
             <tr>
-                <td class="single line" style="text-align: center">
-                        ${room.numberOfSeats}
-                </td>
-                <td style="text-align: center">
-                        ${room.price}
-                </td>
-                <td style="text-align: center">${room.numberRoom}</td>
-                <td style="text-align: center"><a href="${pageContext.request.contextPath}/adminHotelSession/adminHotelProfile/editRoom/<%=id%>">Редактировать</a>
-                </td>
-                <td style="text-align: center"><a href="${pageContext.request.contextPath}/adminHotelSession/adminHotelProfile/deleteRoom/<%=id%>">Удалить
-                    комнату</a></td>
+                    <td class="single line" style="text-align: center">
+                            ${room.numberOfSeats}
+                    </td>
+                    <td style="text-align: center">
+                            ${room.price}
+                    </td>
+                    <td style="text-align: center">${room.numberRoom}</td>
+                    <td style="text-align: center"><a href="${pageContext.request.contextPath}/adminHotelSession/adminHotelProfile/editRoom/<%=id%>">Редактировать</a>
+                    </td>
+                    <td style="text-align: center"><a href="${pageContext.request.contextPath}/adminHotelSession/adminHotelProfile/deleteRoom/<%=id%>">Удалить
+                        комнату</a></td>
             </tr>
             </tbody>
+                <%id++;%>
+                </c:forEach>
+
         </table>
-        <%id++;%>
-    </c:forEach>
+
+
     <a href="${pageContext.request.contextPath}/adminHotelSession/adminHotelProfile/hotel/addHotelRoom">Добавить комнату</a>
 </c:if>
 
