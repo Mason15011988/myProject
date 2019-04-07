@@ -9,6 +9,7 @@
     <title>Login</title>
 </head>
 <body>
+
 <c:if test="${role.equals(guest)}">
     <div class="container">
         <h5>Выберите вариант инициализации</h5> <br>
@@ -26,17 +27,19 @@
                      action="${pageContext.request.contextPath}/login/user">
             <br>Email<br>
             <spring:input path="email"/>
-            <div style="color: red"><spring:errors  path="email"/>
-                    ${messageError}
-            </div>
+            <div style="color: red"><spring:errors  path="email"/> ${messageError}  </div>
             <br>Пароль<br>
             <spring:password path="password"/>
             <div><spring:errors cssStyle="color: red" path="password"/></div>
             <br>
             <p><spring:button>Войти</spring:button></p>
+            <br>
+            <br>
+            <div ><a href="${pageContext.request.contextPath}/">Вернуться на главную</a></div>
         </spring:form>
     </div>
 </c:if>
+
 <c:if test="${role.equals(adminHotel)}">
     <div class="container">
         <h5>Инициализации администратора отеля</h5>
@@ -44,16 +47,18 @@
                      action="${pageContext.request.contextPath}/login/adminHotel">
             <br>Email<br>
             <spring:input path="email"/>
-            <div style="color: red"><spring:errors  path="email"/>
-                    ${messageError}
-            </div>
+            <div style="color: red"><spring:errors  path="email"/>  ${messageError}  </div>
             <br>Пароль<br>
             <spring:password path="password"/>
             <div><spring:errors cssStyle="color: red" path="password"/></div>
             <br>
             <p><spring:button>Войти</spring:button></p>
+            <br>
+            <br>
+            <div ><a href="${pageContext.request.contextPath}/">Вернуться на главную</a></div>
         </spring:form>
     </div>
 </c:if>
+
 </body>
 </html>

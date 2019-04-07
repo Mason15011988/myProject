@@ -17,6 +17,11 @@ public class JpaUserService implements UserService {
     private final JpaUserRepository userRepository;
 
     @Override
+    public void deleteCalendar(Calendar calendar) {
+        userRepository.deleteCalendar(calendar);
+    }
+
+    @Override
     @Transactional(readOnly = true)
     public User findUserByEmail(String email) {
         try {
@@ -25,6 +30,16 @@ public class JpaUserService implements UserService {
         } catch (NoResultException e) {
             return null;
         }
+    }
+
+    @Override
+    public List<Calendar> findDatesFromReservation(Search search) {
+        return  userRepository.findDatesFromReservation(search);
+    }
+
+    @Override
+    public void deleteReservation(Reservation reservation) {
+        userRepository.deleteReservation(reservation);
     }
 
     @Override

@@ -10,6 +10,7 @@
     <title>EditHotel</title>
 </head>
 <body>
+
 <c:if test="${role.equals(hotel)}">
     <div class="container">
         <spring:form cssClass="form-control-sm" modelAttribute="newHotel" method="post"
@@ -29,6 +30,7 @@
         </spring:form>
     </div>
 </c:if>
+
 <c:if test="${role.equals(hotelAddress)}">
     <div class="container">
         <spring:form cssClass="form-control-sm" modelAttribute="newAddress" method="post"
@@ -49,9 +51,9 @@
             <br>
             <p><spring:button>Редактировать</spring:button></p>
         </spring:form>
-
     </div>
 </c:if>
+
 <c:if test="${role.equals(hotelRoom)}">
     <div class="container">
         <spring:form cssClass="form-control-sm" modelAttribute="newRoom" method="post"
@@ -59,7 +61,7 @@
             <h5>Заполните описание комнаты</h5>
             <br>Количество мест в номере<br>
             <spring:input path="numberOfSeats"/>
-            <div><spring:errors cssStyle="color: red" path="numberOfSeatS"/></div>
+            <div><spring:errors cssStyle="color: red" path="numberOfSeats"/></div>
             <br>Цена за день($)<br>
             <spring:input path="price"/>
             <div><spring:errors cssStyle="color: red" path="price"/></div>
@@ -71,5 +73,6 @@
         </spring:form>
     </div>
 </c:if>
+
 </body>
 </html>

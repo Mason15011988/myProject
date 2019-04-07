@@ -9,11 +9,10 @@
     <title>Hotels</title>
 </head>
 <body >
-<div class="header-panel" style="background-color:cornsilk;height: 50px">
-    ${messageError}
-
+<div class="header-panel" >
+    <h4>${messageError}<h4>
     <c:if test="${hotels.size() > 0}">
-        <p>Отели:</p>
+        <h5>Отели:</h5>
         <ul>
             <%int id = 1;%>
             <c:forEach var="hotel" items="${hotels}">

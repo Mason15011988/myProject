@@ -43,10 +43,10 @@ public class AdminSessionController {
         AdminHotel adminHotelSession = (AdminHotel) request.getSession().getAttribute(ADMIN_HOTEL_SESSION);
         AdminHotel adminHotel = adminHotelService.findAdminHotel(adminHotelSession);
         List<Hotel> hotels = adminHotel.getHotelList();
+        modelAndView.setViewName(HOTELS);
         if (hotels.size() == 0) {
-            modelAndView.addObject(MESSAGE_ERROR, NO_HOTEL);
+            modelAndView.addObject(MESSAGE_ERROR, NO_HOTELS);
             modelAndView.addObject(HOTELS, hotels);
-            modelAndView.setViewName(HOTELS);
             return modelAndView;
         }
 

@@ -6,7 +6,7 @@
     <style>
         <%@include file="../static/css/bootstrap.min.css"%>
     </style>
-    <title>Index</title>
+    <title>Booking</title>
 </head>
 <body >
 <div class="container">
@@ -16,18 +16,14 @@
                 <th>Город<br>
                     <input type="text"  name="city" />
                 </th>
-                <th>
-                    Количкство мест<br>
+                <th>Количкство мест<br>
                     <input type="text" name="numberOfSeats"/>
                 </th>
-                <th>
-                    Заезд<br>
+                <th>Заезд<br>
                     <input type="date" name="startDate"/>
                 </th>
-                <th>
-                    Отьезд<br>
+                <th>Отьезд<br>
                     <input type="date" name="endDate"/><br>
-
                 </th>
                 <th>
                     <br>
@@ -38,7 +34,8 @@
         <div style="color: red">${messageError}</div>
     </form>
 </div>
-${messageError}
+<h2 style="text-align: center">${messageErrorNoHotel}</h2>
+
 <c:if test="${roomsSearch.size() > 0 && flagBooking==false}">
     <h3>Отели:</h3>
     <table class="ui fixed single line celled table" style="width: 80%">
@@ -50,13 +47,10 @@ ${messageError}
             <th>Количество дней</th>
             <th>Цена($)</th>
             <th></th>
-
-
         </tr>
         </thead>
         <%int id = 0;%>
         <c:forEach var="room" items="${roomsSearch}">
-
             <tbody>
             <tr>
                 <td class="single line" style="text-align: center">
@@ -68,13 +62,12 @@ ${messageError}
                 <td style="text-align: center">${days * room.price}</td>
                 <td style="text-align: center"><a href="${pageContext.request.contextPath}/userSession/booking/reservationRoom/<%=id%>">Забронировать</a>
                 </td>
-
             </tr>
             </tbody>
             <%id++;%>
         </c:forEach>
-
     </table>
 </c:if>
+
 </body>
 </html>

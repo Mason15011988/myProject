@@ -42,12 +42,38 @@ public class JpaUserRepository implements UserRepository {
 
     @Override
     public List<Room> searchRoomByAddressHotelAndNumberOfSeats(Search search) {
-        String sql = " select r from Room r join r.hotel h where h.addressHotel.city = ?1 and r.numberOfSeats = ?2 ";
+        String sql = " select r from Room r join r.hotel h " +
+                "where lower(h.addressHotel.city)  like lower(concat('%',?1,'%') )" +
+                "and r.numberOfSeats = ?2 ";
         return (List<Room>) entityManager.createQuery(sql).
                 setParameter(1, search.getCity()).
                 setParameter(2, search.getNumberOfSeats()).
                 getResultList();
 
+    }
+
+    @Override
+    public List<Calendar> findDatesFromReservation(Search search) {
+        String sql = "select c from Calendar c join c.room r where c.date in (?1) and r.id = ?2";
+        return (List<Calendar>) entityManager.createQuery(sql).
+                setParameter(1,search.getDates()).
+                setParameter(2,search.getIdRoom()).
+                getResultList();
+    }
+
+    @Override
+    public Calendar findCalendar(Calendar calendar) {
+        String sql = "from Calendar where id = ?1";
+        return (Calendar) entityManager.createQuery(sql).
+                setParameter(1, calendar.getId()).
+                getSingleResult();
+
+    }
+
+    @Override
+    public void deleteCalendar(Calendar calendar) {
+        Calendar calendarForDel = findCalendar(calendar);
+        entityManager.remove(entityManager.contains(calendarForDel) ? calendarForDel : entityManager.merge(calendarForDel));
     }
 
     @Override
@@ -93,5 +119,19 @@ public class JpaUserRepository implements UserRepository {
     @Override
     public void addUser(User user) {
         entityManager.persist(user);
+    }
+
+    @Override
+    public void deleteReservation(Reservation reservation) {
+        Reservation reservationForDel = findReservation(reservation);
+        entityManager.remove(entityManager.contains(reservationForDel) ? reservationForDel : entityManager.merge(reservationForDel));
+    }
+
+    @Override
+    public Reservation findReservation(Reservation reservation) {
+        String sql = "from Reservation where id = ?1";
+        return (Reservation) entityManager.createQuery(sql).
+                setParameter(1, reservation.getId()).
+                getSingleResult();
     }
 }

@@ -9,8 +9,7 @@
     <title>Index</title>
 </head>
 <body >
-<%--<img src="<c:url value="/WEB-INF/static/img/images.jpg"/>" alt="">--%>
-<div class="header-panel" style="background-color:cornsilk;height: 50px">
+<div class="header-panel">
     <table style="width: 100%">
         <tr>
             <th>Добро пожаловать на сайт</th>
@@ -19,77 +18,64 @@
         </tr>
     </table>
 </div>
-${search}
-<%--${v2}--%>
-
+<br>
+<br>
 <div class="container">
     <form method="post" action="${pageContext.request.contextPath}/">
         <table>
             <tr>
-                <th>Страна<br>
+                <th>Город<br>
                     <input type="text"  name="city" />
                 </th>
-                <th>
-                    Количкство мест<br>
+                <th>Количкство мест<br>
                     <input type="text" name="numberOfSeats"/>
                 </th>
-                <th>
-                    Заезд<br>
+                <th>Заезд<br>
                     <input type="date" name="startDate"/>
                 </th>
-                <th>
-                    Отьезд<br>
+                <th>Отьезд<br>
                     <input type="date" name="endDate"/><br>
-
                 </th>
                 <th>
                     <br>
                     <button type="submit">Поиск</button>
                 </th>
             </tr>
-            <tr>
-                <th></th>
-                <th></th>
-                <th><font size="2" color="red">${errorNowDate}</font></th>
-                <th><font size="2" color="red">${errorDate}</font> </th>
-                <th></th>
-
-            </tr>
         </table>
+        <div style="color: red">${messageError}</div>
     </form>
 </div>
+<h2 style="text-align: center">${messageErrorNoHotel}</h2>
 
-<c:if test="${roomsDates.size() > 0}">
-    <p>Отели:</p>
-    <ul>
-
-        <c:forEach var="room" items="${roomsDates}">
-            <li>
-                ${room.id}<br>
-                ${room.hotel.name}<br>
-                ${room.hotel.addressHotel.city}<br>
-                ${room.numberOfSeats}<br>
-            </li>
-
+<c:if test="${roomsSearch.size() > 0 && flagBooking==false}">
+    <h3>Отели:</h3>
+    <table class="ui fixed single line celled table" style="width: 80%">
+        <thead>
+        <tr style="text-align: center">
+            <th class="single line">Название отеля</th>
+            <th>Город</th>
+            <th>Количество мест в номере</th>
+            <th>Количество дней</th>
+            <th>Цена($)</th>
+        </tr>
+        </thead>
+        <%int id = 0;%>
+        <c:forEach var="room" items="${roomsSearch}">
+            <tbody>
+            <tr>
+                <td class="single line" style="text-align: center">
+                    <a href="${pageContext.request.contextPath}/hotels/show/<%=id%>">${room.hotel.name}</a>
+                </td>
+                <td style="text-align: center">${room.hotel.addressHotel.city}</td>
+                <td style="text-align: center">${room.numberOfSeats}</td>
+                <td style="text-align: center">${days}</td>
+                <td style="text-align: center">${days * room.price}</td>
+                </td>
+            </tr>
+            </tbody>
+            <%id++;%>
         </c:forEach>
-    </ul>
+    </table>
 </c:if>
-<c:if test="${roomsAddress.size() > 0}">
-    <p>Отели:</p>
-    <ul>
-
-        <c:forEach var="room" items="${roomsAddress}">
-            <li>
-                    ${room.id}<br>
-                    ${room.hotel.name}<br>
-                    ${room.hotel.addressHotel.city}<br>
-                    ${room.numberOfSeats}<br>
-            </li>
-
-        </c:forEach>
-    </ul>
-</c:if>
-
-
 </body>
 </html>

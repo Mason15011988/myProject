@@ -13,6 +13,7 @@ public class Search {
     private LocalDate startDate;
     private LocalDate endDate;
     private Set<LocalDate> dates;
+    private Integer idRoom;
 
 
 }

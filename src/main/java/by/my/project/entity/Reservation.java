@@ -31,7 +31,4 @@ public class Reservation implements Serializable {
     @JoinColumn(name = "room_id")
     private Room room;
 
-//    @ManyToOne
-//    @JoinColumn(name="user_id")
-//    private User user;
 }

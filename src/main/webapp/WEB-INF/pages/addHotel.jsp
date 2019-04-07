@@ -10,6 +10,7 @@
     <title>AddHotel</title>
 </head>
 <body>
+
 <c:if test="${role.equals(hotelAddress)}">
     <div class="container">
         <spring:form cssClass="form-control-sm" modelAttribute="newAddress" method="post"
@@ -31,8 +32,8 @@
             <p><spring:button>Далее</spring:button></p>
         </spring:form>
     </div>
-
 </c:if>
+
 <c:if test="${role.equals(hotel)}">
     <div class="container">
         <spring:form cssClass="form-control-sm" modelAttribute="newHotel" method="post"
@@ -52,6 +53,7 @@
         </spring:form>
     </div>
 </c:if>
+
 <c:if test="${role.equals(hotelRoom)}">
     <div class="container">
         <spring:form cssClass="form-control-sm" modelAttribute="newRoom" method="post"
@@ -71,6 +73,7 @@
         </spring:form>
     </div>
 </c:if>
+
 <c:if test="${role.equals(choice)}">
     <div class="header-panel">
         <h5>Выберите вариант для продолжения</h5> <br>
@@ -82,5 +85,6 @@
         </ul>
     </div>
 </c:if>
+
 </body>
 </html>

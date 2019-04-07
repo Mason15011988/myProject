@@ -3,7 +3,7 @@
 <html>
 <head>
     <style>
-    <%@include file="../static/css/bootstrap.min.css"%>
+        <%@include file="../static/css/bootstrap.min.css"%>
     </style>
     <title>HotelFromSearch</title>
 </head>

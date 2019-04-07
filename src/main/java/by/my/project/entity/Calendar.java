@@ -28,4 +28,14 @@ public class Calendar implements Serializable,Comparable<Calendar> {
     public int compareTo(Calendar o) {
         return date.compareTo(o.date);
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Calendar calendar = (Calendar) o;
+        return Objects.equals(id, calendar.id);
+    }
+
+
 }

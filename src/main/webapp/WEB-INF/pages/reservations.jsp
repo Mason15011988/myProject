@@ -9,10 +9,11 @@
     <title>Reservations</title>
 </head>
 <body >
-<div class="header-panel" style="background-color:cornsilk;height: 50px">
+<div class="header-panel">
     ${messageError}
 
     <c:if test="${reservations.size() > 0}">
+        <div style="text-align: right" ><a href="${pageContext.request.contextPath}/userSession">Вернуться на главную</a></div>
         <h3>Отели:</h3>
         <table class="ui fixed single line celled table" style="width: 80%">
             <thead>
@@ -24,13 +25,10 @@
                 <th>Дата отьезда</th>
                 <th>Цена($)</th>
                 <th></th>
-
-
             </tr>
             </thead>
             <%int id = 0;%>
             <c:forEach var="reservation" items="${reservations}">
-
                 <tbody>
                 <tr>
                     <td class="single line" style="text-align: center"> ${reservation.room.hotel.name}</td>
@@ -41,7 +39,6 @@
                     <td style="text-align: center">${reservation.price}</td>
                     <td style="text-align: center"><a href="${pageContext.request.contextPath}/userSession/userProfile/deleteReservation/<%=id%>">Удалить бронь</a>
                     </td>
-
                 </tr>
                 </tbody>
                 <%id++;%>
@@ -49,6 +46,7 @@
 
         </table>
     </c:if>
+
 </div>
 </body>
 </html>

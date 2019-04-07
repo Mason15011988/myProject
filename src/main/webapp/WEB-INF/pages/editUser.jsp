@@ -10,25 +10,26 @@
     <title>Edit User </title>
 </head>
 <body>
+
 <c:if test="${role.equals(user)}">
-    <div class="header-panel" style="background-color:cornsilk;height: 50px">
+    <div class="header-panel" >
         Личные данные:<br>
-        Email: ${userSession.email}<br>
-        Пароль: ${userSession.password}<br>
-        Дата регистрации: ${userSession.date}
-        <table style="width: 100%">
-            <tr>
-                <th>Выбор</th>
-                <th style="text-align: right"><a
-                        href="${pageContext.request.contextPath}/userSession/userProfile/editUserEmail">
-                    Редактировать email</a></th>
-                <th style="text-align: center"><a
-                        href="${pageContext.request.contextPath}/userSession/userProfile/editUserPassword">
-                    Редактировать пароль</a></th>
-            </tr>
-        </table>
+        <br>
+        Email--> ${userSession.email}<br>
+        Дата регистрации--> ${userSession.date}
+        <br>
+        <br>
+        <ul>
+            <li><a href="${pageContext.request.contextPath}/userSession/userProfile/editUserEmail">
+                Редактировать email</a></li>
+            <li><a href="${pageContext.request.contextPath}/userSession/userProfile/editUserPassword">
+                Редактировать пароль</a></li>
+        </ul>
+        <br>
+        <a href="${pageContext.request.contextPath}/userSession">Вернуться на главную</a>
     </div>
 </c:if>
+
 <c:if test="${role.equals(email)}">
     <div class="container">
         <form method="post" action="${pageContext.request.contextPath}/userSession/userProfile/editUserEmail">
@@ -39,8 +40,8 @@
             <button>Редактировать</button>
         </form>
     </div>
-
 </c:if>
+
 <c:if test="${role.equals(password)}">
     <div class="container">
         <form method="post"
@@ -58,9 +59,7 @@
             <button>Редактировать</button>
         </form>
     </div>
-
 </c:if>
-
 
 </body>
 </html>

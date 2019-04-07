@@ -5,13 +5,11 @@
 <head>
     <style>
         <%@include file="../static/css/bootstrap.min.css"%>
-        /*body{*/
-        /*background-image:url("../../../images.jpg") ;*/
-        /*}*/
     </style>
     <title>Session</title>
 </head>
-<body style="background-image:url(../../../1.png)">
+<body >
+
 <c:if test="${role.equals(adminHotel)}">
     <div class="header-panel">
         <table style="width: 100%">
@@ -25,20 +23,23 @@
         </table>
     </div>
 </c:if>
+
 <c:if test="${role.equals(user)}">
     <div class="header-panel">
         <table style="width: 100%">
             <tr>
                 <th style="text-align: center" >Добро пожаловать на сайт</th>
+                <th style="text-align: center"><a  href="${pageContext.request.contextPath}/userSession/booking">
+                    Бронирование</a></th>
                 <th style="text-align: right"><a  href="${pageContext.request.contextPath}/userSession/userProfile">
                     Личный кабинет</a></th>
                 <th style="text-align: center"><a  href="${pageContext.request.contextPath}/exit">
                     Выход</a></th>
-                <th style="text-align: center"><a  href="${pageContext.request.contextPath}/userSession/booking">
-                    Бронирование</a></th>
             </tr>
         </table>
+        <br>
     </div>
 </c:if>
+
 </body>
 </html>

@@ -5,12 +5,15 @@ import by.my.project.entity.*;
 import java.util.List;
 
 public interface UserService {
+
     User findUserByID(Integer id);
 
     Reservation findDate(Reservation reservation);
 
     List<Hotel> searchHotel(Search search);
+
     List<Room> searchRoomByAddressHotelAndNumberOfSeats(Search search);
+
     List<Room> searchRoomByDates(Search search);
 
     void addUser(User user);
@@ -27,6 +30,10 @@ public interface UserService {
 
     void addCalendar(Calendar calendar);
 
+    void deleteReservation(Reservation reservation);
 
+    List<Calendar> findDatesFromReservation(Search search);
+
+    void deleteCalendar(Calendar calendar);
 
 }

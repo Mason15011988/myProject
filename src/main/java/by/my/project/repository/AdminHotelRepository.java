@@ -6,6 +6,7 @@ import by.my.project.entity.Hotel;
 import by.my.project.entity.Room;
 
 public interface AdminHotelRepository {
+
     void addAdminHotel(AdminHotel adminHotel);
 
     AdminHotel findAdminHotelByEmail(String email);
