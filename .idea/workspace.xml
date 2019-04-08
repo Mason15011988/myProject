@@ -9,37 +9,7 @@
     <list default="true" id="5c93e788-55ed-43ec-b1f3-3d1b5c3aceef" name="Default Changelist" comment="bs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/logger.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/constant/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/constant/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/constant/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/AdminSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/AdminSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditHotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditHotelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/HotelSaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/HotelSaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/controller/UserSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/controller/UserSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/AddressHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/AddressHotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/AdminHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/AdminHotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Calendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/interceptor/AdminHotelInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/interceptor/AdminHotelInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/interceptor/LogRegInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/interceptor/LogRegInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/interceptor/UserInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/interceptor/UserInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/repository/AdminHotelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/repository/AdminHotelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaAdminHotelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaAdminHotelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/service/AdminHotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/service/AdminHotelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/service/JpaUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/service/JpaUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/util/FormatDateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/util/FormatDateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/my/project/entity/LocalDateAttributeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/my/project/util/LocalDateAttributeConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/bootstrap.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/bootstrap.bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/bootstrap.bundle.js.map" afterDir="false" />
@@ -49,14 +19,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/bootstrap.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/bootstrap.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addHotel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addHotel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/booking.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/booking.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editAdminHotel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editAdminHotel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hotelsFomSearch.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hotelsFomSearch.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hotelsIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hotelsIndex.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/reservations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/reservations.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/my/project/aspect/LoggerAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/my/project/aspect/LoggerAspect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/my/project/constant/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/my/project/constant/Constants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/my/project/constant/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/my/project/constant/Role.class" afterDir="false" />
@@ -217,49 +180,49 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="366" />
-          <entry key="java" value="739" />
+          <entry key="java" value="746" />
           <entry key="jpg" value="2" />
           <entry key="jsp" value="409" />
           <entry key="log" value="1" />
           <entry key="properties" value="10" />
           <entry key="sql" value="1" />
           <entry key="tld" value="1" />
-          <entry key="xml" value="28" />
+          <entry key="xml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="366" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="739" />
+          <entry key="JAVA" value="746" />
           <entry key="JSP" value="409" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="10" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="29" />
+          <entry key="XML" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="60" />
-          <entry key="java" value="18209" />
+          <entry key="java" value="18221" />
           <entry key="jsp" value="6547" />
           <entry key="log" value="2" />
           <entry key="properties" value="74" />
           <entry key="sql" value="30" />
-          <entry key="txt" value="238" />
-          <entry key="xml" value="403" />
+          <entry key="txt" value="253" />
+          <entry key="xml" value="404" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="18205" />
+          <entry key="JAVA" value="18217" />
           <entry key="JPA QL" value="4" />
           <entry key="JSP" value="6547" />
-          <entry key="PLAIN_TEXT" value="300" />
+          <entry key="PLAIN_TEXT" value="315" />
           <entry key="Properties" value="74" />
           <entry key="Scratch" value="30" />
-          <entry key="XML" value="403" />
+          <entry key="XML" value="404" />
         </counts>
       </usages-collector>
     </session>
@@ -303,81 +266,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hotel.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="12" column="129" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="129" />
+            <state relative-caret-position="751">
+              <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
+              <folding>
+                <element signature="method#getSearch#0;class#IndexController#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hotelsFomSearch.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+            <state relative-caret-position="-136">
+              <caret line="53" column="75" selection-start-line="53" selection-start-column="75" selection-end-line="53" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hotelsIndex.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/UserSessionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+            <state relative-caret-position="1037">
+              <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-918" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-629" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/profile.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-541" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/registration.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-646" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/reservations.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+            <state relative-caret-position="73">
+              <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/session.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/context.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/util/LocalDateAttributeConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+            <state relative-caret-position="85">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -450,7 +381,6 @@
         <option value="$PROJECT_DIR$/src/main/java/by/my/project/controller/EditUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/my/project/controller/HotelSaveController.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/my/project/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/my/project/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/my/project/controller/UserSessionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/my/project/entity/AddressHotel.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/my/project/entity/Search.java" />
@@ -463,7 +393,6 @@
         <option value="$PROJECT_DIR$/src/main/java/by/my/project/interceptor/AdminHotelInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/my/project/interceptor/LogRegInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/my/project/interceptor/UserInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/by/my/project/repository/AdminHotelRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaAdminHotelRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/my/project/repository/UserRepository.java" />
@@ -477,6 +406,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hotelsFomSearch.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hotelsIndex.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/reservations.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/by/my/project/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/context.xml" />
       </list>
     </option>
   </component>
@@ -609,7 +540,7 @@
               <item name="by" type="462c0819:PsiDirectoryNode" />
               <item name="my" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
@@ -625,15 +556,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
@@ -823,7 +745,7 @@
       <workItem from="1554616859865" duration="7140000" />
       <workItem from="1554626941186" duration="11394000" />
       <workItem from="1554701231488" duration="16210000" />
-      <workItem from="1554718762268" duration="1410000" />
+      <workItem from="1554718762268" duration="4892000" />
     </task>
     <task id="LOCAL-00001" summary="log file">
       <created>1552372770994</created>
@@ -895,11 +817,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554643873184</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="forDiploma">
+      <created>1554720491306</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1554720491306</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="549771000" />
+    <option name="totallyTimeSpent" value="553253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -915,7 +844,7 @@
       <window_info id="Persistence" order="8" sideWeight="0.6405229" side_tool="true" weight="0.28214827" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2908497" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.24673203" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" visible="true" weight="0.19607843" />
       <window_info anchor="bottom" x="22" y="208" width="1322" height="311" id="Debug" order="3" sideWeight="0.49924356" weight="0.125817" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -994,7 +923,8 @@
     <MESSAGE value="one week" />
     <MESSAGE value="bs" />
     <MESSAGE value="add reservation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add reservation" />
+    <MESSAGE value="forDiploma" />
+    <option name="LAST_COMMIT_MESSAGE" value="forDiploma" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1030,27 +960,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/EditAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/EditHotelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="119" column="5" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/EditUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/HotelSaveController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-830">
@@ -1058,34 +967,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
-          <folding>
-            <element signature="method#getSearch#0;class#IndexController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/RegistrationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-425">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/UserSessionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1118,13 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/entity/LocalDateAttributeConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1212,22 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaAdminHotelRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="method#findAdminHotelByEmail#0;class#JpaAdminHotelRepository#0" />
-            <element signature="method#findAdminHotel#0;class#JpaAdminHotelRepository#0" />
-            <element signature="method#findHotel#0;class#JpaAdminHotelRepository#0" />
-            <element signature="method#deleteHotel#0;class#JpaAdminHotelRepository#0" />
-            <element signature="method#findRoom#0;class#JpaAdminHotelRepository#0" />
-            <element signature="method#findNumberRoom#0;class#JpaAdminHotelRepository#0" />
-            <element signature="method#deleteRoom#0;class#JpaAdminHotelRepository#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaUserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
@@ -1257,18 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/service/JpaAdminHotelService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="method#findAdminHotel#0;class#JpaAdminHotelService#0" />
-            <element signature="method#findAdminHotelByEmail#0;class#JpaAdminHotelService#0" />
-            <element signature="method#findNumberRoom#0;class#JpaAdminHotelService#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1394,20 +1244,55 @@
         <state relative-caret-position="-629" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-541" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/reservations.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/service/JpaAdminHotelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="method#findAdminHotel#0;class#JpaAdminHotelService#0" />
+            <element signature="method#findAdminHotelByEmail#0;class#JpaAdminHotelService#0" />
+            <element signature="method#findNumberRoom#0;class#JpaAdminHotelService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/repository/JpaAdminHotelRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="method#findAdminHotelByEmail#0;class#JpaAdminHotelRepository#0" />
+            <element signature="method#findAdminHotel#0;class#JpaAdminHotelRepository#0" />
+            <element signature="method#findHotel#0;class#JpaAdminHotelRepository#0" />
+            <element signature="method#deleteHotel#0;class#JpaAdminHotelRepository#0" />
+            <element signature="method#findRoom#0;class#JpaAdminHotelRepository#0" />
+            <element signature="method#findNumberRoom#0;class#JpaAdminHotelRepository#0" />
+            <element signature="method#deleteRoom#0;class#JpaAdminHotelRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/aspect/LoggerAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1416,10 +1301,51 @@
         <state relative-caret-position="-306" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-646" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
+          <folding>
+            <element signature="method#getSearch#0;class#IndexController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/UserSessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="53" column="75" selection-start-line="53" selection-start-column="75" selection-end-line="53" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        <state relative-caret-position="73">
+          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/my/project/util/LocalDateAttributeConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>

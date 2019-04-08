@@ -15874,3 +15874,39 @@ ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table reservation drop f
 ERROR SchemaExport:427 - Table 'bookhotel.reservation' doesn't exist
 ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table room drop foreign key FK_fdtq4rubhga537amx7apm0eel
 ERROR SchemaExport:427 - Table 'bookhotel.room' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table calendar_room drop foreign key FK_6akgsebousph7iseuncpmk9jb
+ERROR SchemaExport:427 - Table 'bookhotel.calendar_room' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table calendar_room drop foreign key FK_fak0ssc0k31bkaw1ut9re3rxy
+ERROR SchemaExport:427 - Table 'bookhotel.calendar_room' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotel drop foreign key FK_eo29hrd3gq1ssk93oipcdhmbr
+ERROR SchemaExport:427 - Table 'bookhotel.hotel' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table reservation drop foreign key FK_uiis842vpqkfw6wed0ew4scw
+ERROR SchemaExport:427 - Table 'bookhotel.reservation' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table reservation drop foreign key FK_recqnfjcp370rygd9hjjxjtg
+ERROR SchemaExport:427 - Table 'bookhotel.reservation' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table room drop foreign key FK_fdtq4rubhga537amx7apm0eel
+ERROR SchemaExport:427 - Table 'bookhotel.room' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table calendar_room drop foreign key FK_6akgsebousph7iseuncpmk9jb
+ERROR SchemaExport:427 - Table 'bookhotel.calendar_room' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table calendar_room drop foreign key FK_fak0ssc0k31bkaw1ut9re3rxy
+ERROR SchemaExport:427 - Table 'bookhotel.calendar_room' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotel drop foreign key FK_eo29hrd3gq1ssk93oipcdhmbr
+ERROR SchemaExport:427 - Table 'bookhotel.hotel' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table reservation drop foreign key FK_uiis842vpqkfw6wed0ew4scw
+ERROR SchemaExport:427 - Table 'bookhotel.reservation' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table reservation drop foreign key FK_recqnfjcp370rygd9hjjxjtg
+ERROR SchemaExport:427 - Table 'bookhotel.reservation' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table room drop foreign key FK_fdtq4rubhga537amx7apm0eel
+ERROR SchemaExport:427 - Table 'bookhotel.room' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table calendar_room drop foreign key FK_6akgsebousph7iseuncpmk9jb
+ERROR SchemaExport:427 - Table 'bookhotel.calendar_room' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table calendar_room drop foreign key FK_fak0ssc0k31bkaw1ut9re3rxy
+ERROR SchemaExport:427 - Table 'bookhotel.calendar_room' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table hotel drop foreign key FK_eo29hrd3gq1ssk93oipcdhmbr
+ERROR SchemaExport:427 - Table 'bookhotel.hotel' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table reservation drop foreign key FK_uiis842vpqkfw6wed0ew4scw
+ERROR SchemaExport:427 - Table 'bookhotel.reservation' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table reservation drop foreign key FK_recqnfjcp370rygd9hjjxjtg
+ERROR SchemaExport:427 - Table 'bookhotel.reservation' doesn't exist
+ERROR SchemaExport:426 - HHH000389: Unsuccessful: alter table room drop foreign key FK_fdtq4rubhga537amx7apm0eel
+ERROR SchemaExport:427 - Table 'bookhotel.room' doesn't exist
