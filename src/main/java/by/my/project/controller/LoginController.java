@@ -68,7 +68,7 @@ public class LoginController {
 
     @PostMapping(path = ADMIN_HOTEL)
     public ModelAndView getLoginFormAdmin(@Valid @ModelAttribute(NEW_ADMIN_HOTEL) AdminHotel adminHotel, BindingResult bindingResult,
-                                         ModelAndView modelAndView, HttpServletRequest request) {
+                                          ModelAndView modelAndView, HttpServletRequest request) {
         AdminHotel adminHotelSession;
         adminHotel.setRole(Role.ADMIN_HOTEL);
         if (bindingResult.hasErrors()) {

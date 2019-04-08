@@ -6,16 +6,6 @@ import java.util.List;
 
 public interface UserService {
 
-    User findUserByID(Integer id);
-
-    Reservation findDate(Reservation reservation);
-
-    List<Hotel> searchHotel(Search search);
-
-    List<Room> searchRoomByAddressHotelAndNumberOfSeats(Search search);
-
-    List<Room> searchRoomByDates(Search search);
-
     void addUser(User user);
 
     User findUserByEmail(String email);
@@ -24,16 +14,18 @@ public interface UserService {
 
     void updateUser(User user);
 
-    void addDate(Reservation reservation);
-
     void updateRoom(Room room);
 
-    void addCalendar(Calendar calendar);
+    List<Room> findRoomByAddressHotelAndNumberOfSeats(Search search);
 
-    void deleteReservation(Reservation reservation);
+    List<Room> findRoomByDates(Search search);
+
+    void addCalendar(Calendar calendar);
 
     List<Calendar> findDatesFromReservation(Search search);
 
     void deleteCalendar(Calendar calendar);
+
+    void deleteReservation(Reservation reservation);
 
 }

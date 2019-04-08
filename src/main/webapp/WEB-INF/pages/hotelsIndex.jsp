@@ -26,7 +26,6 @@
             ${roomSearch.hotel.stars}
         </td>
         <td>${roomSearch.hotel.description}</td>
-
     </tr>
     </tbody>
 </table>
@@ -39,7 +38,6 @@
         <th>Город</th>
         <th>Улица</th>
         <th>Дом</th>
-
     </tr>
     </thead>
     <tbody>
@@ -57,7 +55,6 @@
             ${roomSearch.hotel.addressHotel.house}
         </td>
     </tr>
-
     </tbody>
 </table>
 
@@ -70,7 +67,6 @@
         <th>Номер комнаты</th>
     </tr>
     </thead>
-
     <tbody>
     <tr>
         <td class="single line" style="text-align: center">

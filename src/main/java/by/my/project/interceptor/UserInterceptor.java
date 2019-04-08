@@ -21,7 +21,7 @@ public class UserInterceptor implements HandlerInterceptor {
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object o, ModelAndView modelAndView) throws Exception {
         Role attribute = (Role) request.getSession().getAttribute(ROLE);
-        if (attribute.equals(Role.ADMIN_HOTEL ) || attribute.equals(Role.GUEST)) {
+        if (attribute.equals(Role.ADMIN_HOTEL) || attribute.equals(Role.GUEST)) {
             modelAndView.setViewName(REDIRECT);
         }
     }

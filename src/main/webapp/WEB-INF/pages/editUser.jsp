@@ -7,7 +7,7 @@
     <style>
         <%@include file="../static/css/bootstrap.min.css"%>
     </style>
-    <title>Edit User </title>
+    <title>EditUser </title>
 </head>
 <body>
 

@@ -1,34 +1,35 @@
 package by.my.project.entity;
 
 import lombok.Data;
-import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.sql.Date;
 import java.time.LocalDate;
+
+import static by.my.project.constant.Constants.*;
 
 @Data
 @Entity
-@Table(name = "reservation")
+@Table(name = RESERVATION)
+@NamedQueries({@NamedQuery(name = FIND_RESERVATION, query = "select r from Reservation r where r.id = :id ")})
+
 public class Reservation implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = ID)
     private Integer id;
 
-    @Column(name = "start_date")
+    @Column(name = START_DATE_BD)
     private LocalDate startDate;
 
-    @Column(name = "end_date")
+    @Column(name = END_DATE_BD)
     private LocalDate endDate;
 
-    @Column(name = "price")
+    @Column(name = PRICE)
     private Integer price;
 
     @ManyToOne
-    @JoinColumn(name = "room_id")
+    @JoinColumn(name = ROOM_ID)
     private Room room;
-
 }

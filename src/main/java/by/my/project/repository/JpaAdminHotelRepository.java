@@ -1,6 +1,5 @@
 package by.my.project.repository;
 
-import by.my.project.entity.AddressHotel;
 import by.my.project.entity.AdminHotel;
 import by.my.project.entity.Hotel;
 import by.my.project.entity.Room;
@@ -9,8 +8,11 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import static by.my.project.constant.Constants.*;
+
 @Repository
 public class JpaAdminHotelRepository implements AdminHotelRepository {
+
     @PersistenceContext
     private EntityManager entityManager;
 
@@ -26,19 +28,16 @@ public class JpaAdminHotelRepository implements AdminHotelRepository {
 
     @Override
     public AdminHotel findAdminHotelByEmail(String email) {
-        String sql = "from AdminHotel where email = ?1";
-
-        return (AdminHotel) entityManager.createQuery(sql).
-                setParameter(1, email).
+        return entityManager.createNamedQuery(FIND_ADMIN_HOTEL_BY_EMAIL, AdminHotel.class).
+                setParameter(EMAIL, email).
                 getSingleResult();
     }
 
     @Override
     public AdminHotel findAdminHotel(AdminHotel adminHotel) {
-        String sql = "from AdminHotel where email = ?1 and password =?2";
-        return (AdminHotel) entityManager.createQuery(sql).
-                setParameter(1, adminHotel.getEmail()).
-                setParameter(2, adminHotel.getPassword()).
+        return entityManager.createNamedQuery(FIND_ADMIN_HOTEL, AdminHotel.class).
+                setParameter(EMAIL, adminHotel.getEmail()).
+                setParameter(PASSWORD, adminHotel.getPassword()).
                 getSingleResult();
     }
 
@@ -49,9 +48,8 @@ public class JpaAdminHotelRepository implements AdminHotelRepository {
 
     @Override
     public Hotel findHotel(Hotel hotel) {
-        String sql = "from Hotel where id = ?1";
-        return (Hotel) entityManager.createQuery(sql).
-                setParameter(1, hotel.getId()).
+        return entityManager.createNamedQuery(FIND_HOTEL, Hotel.class).
+                setParameter(ID, hotel.getId()).
                 getSingleResult();
     }
 
@@ -68,18 +66,16 @@ public class JpaAdminHotelRepository implements AdminHotelRepository {
 
     @Override
     public Room findRoom(Room room) {
-        String sql = "from Room where id = ?1";
-        return (Room) entityManager.createQuery(sql).
-                setParameter(1, room.getId()).
+        return entityManager.createNamedQuery(FIND_ROOM, Room.class).
+                setParameter(ID, room.getId()).
                 getSingleResult();
     }
 
     @Override
     public Room findNumberRoom(Room room) {
-        String sql = "from Room where numberRoom = ?1 and hotel.id =?2";
-        return (Room) entityManager.createQuery(sql).
-                setParameter(1, room.getNumberRoom()).
-                setParameter(2,room.getHotel().getId()).
+        return entityManager.createNamedQuery(FIND_NUMBER_ROOM, Room.class).
+                setParameter(NUMBER_ROOM, room.getNumberRoom()).
+                setParameter(ID, room.getHotel().getId()).
                 getSingleResult();
     }
 

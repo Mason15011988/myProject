@@ -20,6 +20,7 @@ import static by.my.project.constant.Constants.*;
 @RequiredArgsConstructor
 @RequestMapping(path = USER_SESSION + "/" + USER_PROFILE)
 public class EditUserController {
+
     private final JpaUserService userService;
 
     @GetMapping(path = EDIT_USER)
@@ -36,7 +37,7 @@ public class EditUserController {
 
     @PostMapping(path = EDIT_USER_EMAIL)
     public ModelAndView userEditEmailGetForm(@RequestParam(EMAIL) String email, HttpServletRequest request,
-                                                     ModelAndView modelAndView) {
+                                             ModelAndView modelAndView) {
         if (email.equals("")) {
             modelAndView.addObject(MESSAGE_ERROR, MESSAGE_ERROR_FOR_EMAIL);
             return ModelAndViewUtil.getModelAndView(modelAndView, EMAIL, EDIT_USER);
@@ -59,9 +60,9 @@ public class EditUserController {
 
     @PostMapping(path = EDIT_USER_PASSWORD)
     public ModelAndView userEditPasswordGetForm(@RequestParam(PASSWORD) String password,
-                                                        @RequestParam(NEW_PASSWORD) String newPassword,
-                                                        @RequestParam(REPEAT_NEW_PASSWORD) String repeatNewPassword,
-                                                        HttpServletRequest request, ModelAndView modelAndView) {
+                                                @RequestParam(NEW_PASSWORD) String newPassword,
+                                                @RequestParam(REPEAT_NEW_PASSWORD) String repeatNewPassword,
+                                                HttpServletRequest request, ModelAndView modelAndView) {
         if (password.equals("") || newPassword.equals("") || repeatNewPassword.equals("")) {
             modelAndView.addObject(MESSAGE_ERROR_FOR_NULL, MESSAGE_ERROR_FOR_NULL_VIEW);
             return ModelAndViewUtil.getModelAndView(modelAndView, PASSWORD, EDIT_USER);

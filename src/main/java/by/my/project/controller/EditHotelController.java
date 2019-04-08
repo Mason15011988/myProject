@@ -15,12 +15,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import static by.my.project.constant.Constants.*;
-import static by.my.project.constant.Constants.REDIRECT;
 
 @Controller
 @RequiredArgsConstructor
-@RequestMapping(path = ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE )
+@RequestMapping(path = ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE)
 public class EditHotelController {
+
     private final JpaAdminHotelService adminHotelService;
 
     @GetMapping(path = DELETE_HOTEL)
@@ -53,14 +53,17 @@ public class EditHotelController {
             return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL, EDIT_HOTEL);
         }
         Hotel hotelForUpdate = (Hotel) request.getSession().getAttribute(HOTEL);
-        hotelForUpdate.setName(hotel.getName());
-        hotelForUpdate.setStars(hotel.getStars());
-        hotelForUpdate.setDescription(hotel.getDescription());
+        setHotelForUpdate(hotel, hotelForUpdate);
         adminHotelService.updateHotel(hotelForUpdate);
         modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE);
         return modelAndView;
     }
 
+    private void setHotelForUpdate(@ModelAttribute(NEW_HOTEL) @Valid Hotel hotel, Hotel hotelForUpdate) {
+        hotelForUpdate.setName(hotel.getName());
+        hotelForUpdate.setStars(hotel.getStars());
+        hotelForUpdate.setDescription(hotel.getDescription());
+    }
 
     @GetMapping(path = EDIT_HOTEL_ADDRESS)
     public ModelAndView editHotelAddressSetForm(ModelAndView modelAndView) {
@@ -97,13 +100,17 @@ public class EditHotelController {
         if (bindingResult.hasErrors()) {
             return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ROOM, EDIT_HOTEL);
         }
-        if (adminHotelService.findNumberRoom(room) != null) {
-            modelAndView.addObject(MESSAGE_ERROR, MESSAGE_ERROR_FOR_ROOM);
-            return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ROOM, EDIT_HOTEL);
-        }
+
         Hotel hotel = (Hotel) request.getSession().getAttribute(HOTEL);
+        room.setHotel(hotel);
         Integer id = (Integer) request.getSession().getAttribute(ID);
         Room roomForUpdate = hotel.getRoomList().get(id);
+        if (!room.getNumberRoom().equals(roomForUpdate.getNumberRoom())) {
+            if (adminHotelService.findNumberRoom(room) != null) {
+                modelAndView.addObject(MESSAGE_ERROR, MESSAGE_ERROR_FOR_ROOM);
+                return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ROOM, EDIT_HOTEL);
+            }
+        }
         roomForUpdate.setNumberOfSeats(room.getNumberOfSeats());
         roomForUpdate.setPrice(room.getPrice());
         roomForUpdate.setNumberRoom(room.getNumberRoom());
@@ -111,5 +118,4 @@ public class EditHotelController {
         modelAndView.setViewName(REDIRECT + ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE);
         return modelAndView;
     }
-
 }

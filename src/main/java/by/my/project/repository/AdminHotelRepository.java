@@ -1,6 +1,5 @@
 package by.my.project.repository;
 
-import by.my.project.entity.AddressHotel;
 import by.my.project.entity.AdminHotel;
 import by.my.project.entity.Hotel;
 import by.my.project.entity.Room;
@@ -30,5 +29,4 @@ public interface AdminHotelRepository {
     void deleteRoom(Room room);
 
     void updateRoom(Room room);
-
 }

@@ -1,20 +1,17 @@
 package by.my.project.controller;
 
-import by.my.project.constant.Role;
-import by.my.project.entity.AddressHotel;
 import by.my.project.entity.AdminHotel;
 import by.my.project.entity.Hotel;
-import by.my.project.entity.Room;
 import by.my.project.service.JpaAdminHotelService;
 import by.my.project.util.ModelAndViewUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
 import java.util.List;
 
 import static by.my.project.constant.Constants.*;
@@ -23,6 +20,7 @@ import static by.my.project.constant.Constants.*;
 @RequiredArgsConstructor
 @RequestMapping(path = ADMIN_HOTEL_SESSION)
 public class AdminSessionController {
+
     private final JpaAdminHotelService adminHotelService;
 
     @GetMapping
@@ -30,12 +28,11 @@ public class AdminSessionController {
         return ModelAndViewUtil.getModelAndView(modelAndView, ADMIN_HOTEL, SESSION);
     }
 
-
     @GetMapping(path = ADMIN_HOTEL_PROFILE)
     public ModelAndView adminProfile(ModelAndView modelAndView, HttpServletRequest request) {
         AdminHotel adminHotel = (AdminHotel) request.getSession().getAttribute(ADMIN_HOTEL_SESSION);
         modelAndView.addObject(ADMIN_HOTEL_SESSION, adminHotel);
-        return ModelAndViewUtil.getModelAndView(modelAndView, ADMIN_HOTEL,PROFILE );
+        return ModelAndViewUtil.getModelAndView(modelAndView, ADMIN_HOTEL, PROFILE);
     }
 
     @GetMapping(path = HOTELS)

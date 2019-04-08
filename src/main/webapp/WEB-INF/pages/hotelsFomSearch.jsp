@@ -9,6 +9,7 @@
 </head>
 <body>
 <table class="ui fixed single line celled table" style="width: 80%">
+    <div style="text-align: right" ><a href="${pageContext.request.contextPath}/userSession">Вернуться на главную</a></div>
     <h5>Описание отеля: </h5>
     <thead>
     <tr style="text-align: center">
@@ -26,7 +27,6 @@
             ${roomSearch.hotel.stars}
         </td>
         <td>${roomSearch.hotel.description}</td>
-
     </tr>
     </tbody>
 </table>
@@ -39,7 +39,6 @@
         <th>Город</th>
         <th>Улица</th>
         <th>Дом</th>
-
     </tr>
     </thead>
     <tbody>
@@ -70,7 +69,6 @@
         <th>Номер комнаты</th>
     </tr>
     </thead>
-
     <tbody>
     <tr>
         <td class="single line" style="text-align: center">

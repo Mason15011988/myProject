@@ -10,33 +10,40 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+import static by.my.project.constant.Constants.*;
+
 @Data
 @Entity
-@Table(name = "admin_hotel")
+@Table(name = ADMIN_HOTEL_BD)
+@NamedQueries({
+        @NamedQuery(name = FIND_ADMIN_HOTEL,
+                query = "select a from AdminHotel a where a.email = :email and a.password = :password"),
+        @NamedQuery(name = FIND_ADMIN_HOTEL_BY_EMAIL,
+                query = "select a from  AdminHotel a where a.email =:email")})
+
 public class AdminHotel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = ID)
     private Integer id;
 
     @Email
-    @Column(name = "email")
-    @NotEmpty(message = "Email отсутствует")
+    @Column(name = EMAIL)
+    @NotEmpty(message = NO_EMAIL)
     private String email;
 
-    @Column(name = "password")
-    @NotEmpty(message = "Пароль отсутствует")
+    @Column(name = PASSWORD)
+    @NotEmpty(message = NO_PASSWORD)
     private String password;
 
-    @Column(name = "date")
+    @Column(name = DATE)
     @Temporal(TemporalType.DATE)
     private Date date;
 
-    @Column(name = "role")
+    @Column(name = ROLE)
     private Role role;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "adminHotel")
-//    @JoinColumn(name = "admin_hotel_id")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = ADMIN_HOTEL)
     private List<Hotel> hotelList;
 
     @PrePersist

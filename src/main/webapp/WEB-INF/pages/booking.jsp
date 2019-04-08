@@ -9,6 +9,7 @@
     <title>Booking</title>
 </head>
 <body >
+<div style="text-align: right" ><a href="${pageContext.request.contextPath}/userSession">Вернуться на главную</a></div>
 <div class="container">
     <form method="post" action="${pageContext.request.contextPath}/userSession/booking">
         <table>

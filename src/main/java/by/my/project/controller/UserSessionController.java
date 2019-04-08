@@ -12,7 +12,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
@@ -23,6 +22,7 @@ import static by.my.project.constant.Constants.*;
 @RequiredArgsConstructor
 @RequestMapping(path = USER_SESSION)
 public class UserSessionController {
+
     private final JpaUserService userService;
 
     @GetMapping
@@ -43,7 +43,7 @@ public class UserSessionController {
         modelAndView.setViewName(RESERVATIONS);
         User userSession = (User) request.getSession().getAttribute(USER_SESSION);
         User user = userService.findUser(userSession);
-        request.getSession().setAttribute(USER_SESSION,user);
+        request.getSession().setAttribute(USER_SESSION, user);
         List<Reservation> reservations = user.getReservationList();
         if (reservations.size() < 1) {
             modelAndView.addObject(MESSAGE_ERROR, NO_RESERVATION);
@@ -70,12 +70,11 @@ public class UserSessionController {
         Room room = reservationForDelete.getRoom();
         room.getCalendar().removeAll(calendars);
         userService.updateRoom(room);
-        for (Calendar calendar:calendars) {
+        for (Calendar calendar : calendars) {
             userService.deleteCalendar(calendar);
         }
         userService.deleteReservation(reservationForDelete);
         modelAndView.setViewName(REDIRECT + USER_SESSION);
         return modelAndView;
-
     }
 }

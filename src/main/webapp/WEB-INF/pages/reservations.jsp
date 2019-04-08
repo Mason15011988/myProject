@@ -10,7 +10,10 @@
 </head>
 <body >
 <div class="header-panel">
-    ${messageError}
+    <c:if test="${reservations.size()<1}">
+        ${messageError}
+        <div style="text-align: right" ><a href="${pageContext.request.contextPath}/userSession">Вернуться на главную</a></div>
+    </c:if>
 
     <c:if test="${reservations.size() > 0}">
         <div style="text-align: right" ><a href="${pageContext.request.contextPath}/userSession">Вернуться на главную</a></div>
@@ -43,7 +46,6 @@
                 </tbody>
                 <%id++;%>
             </c:forEach>
-
         </table>
     </c:if>
 

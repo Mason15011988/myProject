@@ -8,38 +8,40 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+
+import static by.my.project.constant.Constants.*;
 
 @Data
 @Entity
-@Table(name = "hotel")
+@Table(name = HOTEL)
+@NamedQueries({@NamedQuery(name = FIND_HOTEL, query = "select h from Hotel h where h.id = :id ")})
+
 public class Hotel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = ID)
     private Integer id;
 
-    @Column(name = "name_hotel")
-    @NotEmpty(message = "Название отеля отсутствует")
+    @Column(name = NAME_HOTEL)
+    @NotEmpty(message = NO_NAME_HOTEL)
     private String name;
 
-    @Column(name = "stars")
-    @NotNull(message = "Количество звезд отеля отсутствует")
+    @Column(name = STARS)
+    @NotNull(message = NO_STARS)
     private Integer stars;
 
-    @Column(name = "description")
-    @NotEmpty(message = "Описание отеля отсутствует")
+    @Column(name = DESCRIPTION)
+    @NotEmpty(message = NO_DESCRIPTION)
     private String description;
 
     @Embedded
     private AddressHotel addressHotel;
 
     @ManyToOne
-    // @JoinTable(name = "admins_hotel_hotels")
     private AdminHotel adminHotel;
 
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "hotel")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = HOTEL)
     private List<Room> roomList = new ArrayList<>();
 
     @Override

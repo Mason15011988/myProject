@@ -21,6 +21,7 @@ import static by.my.project.constant.Constants.*;
 @RequiredArgsConstructor
 @RequestMapping(path = USER_SESSION)
 public class BookingController {
+
     private final JpaUserService userService;
 
     @GetMapping(path = BOOKING)
@@ -32,8 +33,10 @@ public class BookingController {
     }
 
     @PostMapping(path = BOOKING)
-    public ModelAndView searchRoomGetForm(@RequestParam(CITY) String city, @RequestParam(NUMBER_OF_SEATS) String numberOfSeats,
-                                          @RequestParam(START_DATE) Date startDateForm, @RequestParam(END_DATE) Date endDateForm,
+    public ModelAndView searchRoomGetForm(@RequestParam(CITY) String city,
+                                          @RequestParam(NUMBER_OF_SEATS) String numberOfSeats,
+                                          @RequestParam(START_DATE) Date startDateForm,
+                                          @RequestParam(END_DATE) Date endDateForm,
                                           ModelAndView modelAndView, HttpServletRequest request) {
 
         modelAndView.setViewName(BOOKING);
@@ -55,17 +58,17 @@ public class BookingController {
         }
         Integer days = dates.size();
         modelAndView.addObject(DAYS, days);
-        request.getSession().setAttribute(DAYS,days);
-        modelAndView.addObject(FLAG_BOOKING, false);
+        request.getSession().setAttribute(DAYS, days);
         Search search = getSearch(city, numberOfSeats, startDate, endDate, dates);
         request.getSession().setAttribute(NEW_SEARCH, search);
-        List<Room> roomsBySearchAddress = userService.searchRoomByAddressHotelAndNumberOfSeats(search);
+        List<Room> roomsBySearchAddress = userService.findRoomByAddressHotelAndNumberOfSeats(search);
         if (roomsBySearchAddress.size() < 1) {
             modelAndView.addObject(MESSAGE_ERROR_NO_HOTEL, NO_HOTEL);
             return modelAndView;
         }
-        List<Room> roomsBySearchDate = userService.searchRoomByDates(search);
+        List<Room> roomsBySearchDate = userService.findRoomByDates(search);
         if (roomsBySearchDate.size() < 1) {
+            modelAndView.addObject(FLAG_BOOKING, false);
             request.getSession().setAttribute(ROOMS_SEARCH, roomsBySearchAddress);
             modelAndView.addObject(ROOMS_SEARCH, roomsBySearchAddress);
             return modelAndView;
@@ -76,6 +79,7 @@ public class BookingController {
             return modelAndView;
         }
         request.getSession().setAttribute(ROOMS_SEARCH, roomsBySearchAddress);
+        modelAndView.addObject(FLAG_BOOKING, false);
         modelAndView.addObject(ROOMS_SEARCH, roomsBySearchAddress);
         return modelAndView;
     }
@@ -136,6 +140,4 @@ public class BookingController {
         search.setDates(dates);
         return search;
     }
-
-
 }

@@ -1,7 +1,6 @@
 package by.my.project.controller;
 
 import by.my.project.constant.Role;
-import by.my.project.entity.Reservation;
 import by.my.project.entity.Room;
 import by.my.project.entity.Search;
 import by.my.project.service.JpaUserService;
@@ -14,7 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import java.sql.Date;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
@@ -59,18 +57,18 @@ public class IndexController {
         }
         Integer days = dates.size();
         modelAndView.addObject(DAYS, days);
-        request.getSession().setAttribute(DAYS,days);
-        modelAndView.addObject(FLAG_BOOKING, false);
+        request.getSession().setAttribute(DAYS, days);
         Search search = getSearch(city, numberOfSeats, startDate, endDate, dates);
         request.getSession().setAttribute(NEW_SEARCH, search);
-        List<Room> roomsBySearchAddress = userService.searchRoomByAddressHotelAndNumberOfSeats(search);
+        List<Room> roomsBySearchAddress = userService.findRoomByAddressHotelAndNumberOfSeats(search);
         if (roomsBySearchAddress.size() < 1) {
             modelAndView.addObject(MESSAGE_ERROR_NO_HOTEL, NO_HOTEL);
             return modelAndView;
         }
-        List<Room> roomsBySearchDate = userService.searchRoomByDates(search);
+        List<Room> roomsBySearchDate = userService.findRoomByDates(search);
         if (roomsBySearchDate.size() < 1) {
             request.getSession().setAttribute(ROOMS_SEARCH, roomsBySearchAddress);
+            modelAndView.addObject(FLAG_BOOKING, false);
             modelAndView.addObject(ROOMS_SEARCH, roomsBySearchAddress);
             return modelAndView;
         }
@@ -79,6 +77,7 @@ public class IndexController {
             modelAndView.addObject(MESSAGE_ERROR_NO_HOTEL, NO_HOTEL);
             return modelAndView;
         }
+        modelAndView.addObject(FLAG_BOOKING, false);
         request.getSession().setAttribute(ROOMS_SEARCH, roomsBySearchAddress);
         modelAndView.addObject(ROOMS_SEARCH, roomsBySearchAddress);
         return modelAndView;
@@ -100,6 +99,7 @@ public class IndexController {
         modelAndView.setViewName(REDIRECT);
         return modelAndView;
     }
+
     private Search getSearch(@RequestParam(CITY) String city, @RequestParam(NUMBER_OF_SEATS) String numberOfSeats,
                              LocalDate startDate, LocalDate endDate, Set<LocalDate> dates) {
         Search search = new Search();

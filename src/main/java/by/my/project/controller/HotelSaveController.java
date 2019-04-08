@@ -1,6 +1,5 @@
 package by.my.project.controller;
 
-import by.my.project.constant.Role;
 import by.my.project.entity.AddressHotel;
 import by.my.project.entity.AdminHotel;
 import by.my.project.entity.Hotel;
@@ -27,6 +26,7 @@ import static by.my.project.constant.Constants.*;
 @RequiredArgsConstructor
 @RequestMapping(path = ADMIN_HOTEL_SESSION + "/" + ADMIN_HOTEL_PROFILE + "/" + HOTEL)
 public class HotelSaveController {
+
     private final JpaAdminHotelService adminHotelService;
 
     @GetMapping(path = ADD_HOTEL_ADDRESS)
@@ -37,8 +37,8 @@ public class HotelSaveController {
 
     @PostMapping(path = ADD_HOTEL_ADDRESS)
     public ModelAndView hotelAddressGetForm(@Valid @ModelAttribute(NEW_ADDRESS) AddressHotel addressHotel,
-                                       BindingResult bindingResult,
-                                       ModelAndView modelAndView, HttpServletRequest request) {
+                                            BindingResult bindingResult,
+                                            ModelAndView modelAndView, HttpServletRequest request) {
         if (bindingResult.hasErrors()) {
             return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ADDRESS, ADD_HOTEL);
         }
@@ -78,7 +78,7 @@ public class HotelSaveController {
 
     @PostMapping(path = ADD_HOTEL_ROOM)
     public ModelAndView hotelRoomGetForm(@Valid @ModelAttribute(NEW_ROOM) Room room, BindingResult bindingResult,
-                                    ModelAndView modelAndView, HttpServletRequest request)  {
+                                         ModelAndView modelAndView, HttpServletRequest request) {
         if (bindingResult.hasErrors()) {
             return ModelAndViewUtil.getModelAndView(modelAndView, HOTEL_ROOM, ADD_HOTEL);
         }

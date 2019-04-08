@@ -17,8 +17,23 @@ public class JpaUserService implements UserService {
     private final JpaUserRepository userRepository;
 
     @Override
-    public void deleteCalendar(Calendar calendar) {
-        userRepository.deleteCalendar(calendar);
+    public void addUser(User user) {
+        userRepository.addUser(user);
+    }
+
+    @Override
+    public void updateUser(User user) {
+        userRepository.updateUser(user);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public User findUser(User user) {
+        try {
+            return userRepository.findUser(user);
+        } catch (NoResultException e) {
+            return null;
+        }
     }
 
     @Override
@@ -33,43 +48,10 @@ public class JpaUserService implements UserService {
     }
 
     @Override
-    public List<Calendar> findDatesFromReservation(Search search) {
-        return  userRepository.findDatesFromReservation(search);
-    }
-
-    @Override
-    public void deleteReservation(Reservation reservation) {
-        userRepository.deleteReservation(reservation);
-    }
-
-    @Override
-    public void addDate(Reservation reservation) {
-        userRepository.addDate(reservation);
-    }
-
-    @Override
-    public void updateUser(User user) {
-        userRepository.updateUser(user);
-    }
-
-    @Override
-    public void addUser(User user) {
-        userRepository.addUser(user);
-    }
-
-    @Override
-    public User findUser(User user) {
+    @Transactional(readOnly = true)
+    public List<Room> findRoomByDates(Search search) {
         try {
-            return userRepository.findUser(user);
-        } catch (NoResultException e) {
-            return null;
-        }
-    }
-
-    @Override
-    public List<Room> searchRoomByDates(Search search) {
-        try {
-            return userRepository.searchRoomByDates(search);
+            return userRepository.findRoomByDates(search);
         }catch (NoResultException e){
             return null;
         }
@@ -78,13 +60,12 @@ public class JpaUserService implements UserService {
 
     @Override
     @Transactional(readOnly = true)
-    public User findUserByID(Integer id) {
-        return userRepository.findUserById(id);
-    }
-
-    @Override
-    public void addCalendar(Calendar calendar) {
-        userRepository.addCalendar(calendar);
+    public List<Room> findRoomByAddressHotelAndNumberOfSeats(Search search) {
+        try {
+            return userRepository.findRoomByAddressHotelAndNumberOfSeats(search);
+        }catch (NoResultException e){
+            return null;
+        }
     }
 
     @Override
@@ -93,29 +74,23 @@ public class JpaUserService implements UserService {
     }
 
     @Override
-    public List<Room> searchRoomByAddressHotelAndNumberOfSeats(Search search) {
-        try {
-            return userRepository.searchRoomByAddressHotelAndNumberOfSeats(search);
-        }catch (NoResultException e){
-            return null;
-        }
+    @Transactional(readOnly = true)
+    public List<Calendar> findDatesFromReservation(Search search) {
+        return  userRepository.findDatesFromReservation(search);
     }
 
     @Override
-    public List<Hotel> searchHotel(Search search) {
-        try {
-            return userRepository.searchHotel(search);
-        }catch (NoResultException e){
-            return null;
-        }
+    public void deleteCalendar(Calendar calendar) {
+        userRepository.deleteCalendar(calendar);
     }
 
     @Override
-    public Reservation findDate(Reservation reservation) {
-        try {
-            return userRepository.findDate(reservation);
-        } catch (NoResultException e) {
-            return null;
-        }
+    public void addCalendar(Calendar calendar) {
+        userRepository.addCalendar(calendar);
+    }
+
+    @Override
+    public void deleteReservation(Reservation reservation) {
+        userRepository.deleteReservation(reservation);
     }
 }

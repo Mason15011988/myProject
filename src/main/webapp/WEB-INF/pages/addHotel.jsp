@@ -46,8 +46,8 @@
             <spring:input path="stars"/>
             <div><spring:errors cssStyle="color: red" path="stars"/></div>
             <br>Описание<br>
-            <spring:textarea   path="description" rows = "5" cols = "50"/>
-            <div ><spring:errors cssStyle="color: red" path="description"/></div>
+            <spring:textarea path="description" rows="5" cols="50"/>
+            <div><spring:errors cssStyle="color: red" path="description"/></div>
             <br>
             <p><spring:button>Далее</spring:button></p>
         </spring:form>
@@ -67,7 +67,7 @@
             <div><spring:errors cssStyle="color: red" path="price"/></div>
             <br>Номер комнаты <br>
             <spring:input path="numberRoom"/>
-            <div style="color: red"><spring:errors  path="numberRoom"/> ${messageError}</div>
+            <div style="color: red"><spring:errors path="numberRoom"/> ${messageError}</div>
             <br>
             <p><spring:button>Далее</spring:button></p>
         </spring:form>
@@ -78,9 +78,9 @@
     <div class="header-panel">
         <h5>Выберите вариант для продолжения</h5> <br>
         <ul>
-            <li><a  href="${pageContext.request.contextPath}/adminHotelSession/adminHotelProfile/hotel/addHotelRoom">
+            <li><a href="${pageContext.request.contextPath}/adminHotelSession/adminHotelProfile/hotel/addHotelRoom">
                 Добавить еще комнату</a></li>
-            <li> <a  href="${pageContext.request.contextPath}/adminHotelSession/adminHotelProfile">
+            <li><a href="${pageContext.request.contextPath}/adminHotelSession/adminHotelProfile">
                 Выйти</a></li>
         </ul>
     </div>

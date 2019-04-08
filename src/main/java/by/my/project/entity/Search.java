@@ -3,7 +3,6 @@ package by.my.project.entity;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.List;
 import java.util.Set;
 
 @Data
@@ -14,6 +13,4 @@ public class Search {
     private LocalDate endDate;
     private Set<LocalDate> dates;
     private Integer idRoom;
-
-
 }
